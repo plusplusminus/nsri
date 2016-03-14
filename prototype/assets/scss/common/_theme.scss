@@ -1,3 +1,17 @@
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+.list-inline{
+	list-style: none;
+	li{
+		display: inline;
+		padding-right: 0.5rem;
+	}
+}
 body{
 	padding-top: 4rem;
 }
@@ -13,6 +27,20 @@ body{
 
 .navbar-primary{
 	border-radius: 0px;
+}
+
+
+.base-finder{
+	button{
+		&:active,
+		&:focus{
+			outline: none;
+		}
+	}
+	.card{
+		border-radius: 0;
+		border: none;
+	}
 }
 
 .footer{
