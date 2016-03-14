@@ -18,14 +18,26 @@ html(lang="en")
                     li.nav-item
                         a.nav-link(href="#") Contact Us
                     li.nav-item
-                        a.nav-link(href="#") Social
+                        a.nav-link(href="#")
+                            i.fa.fa-facebook
+                    li.nav-item
+                        a.nav-link(href="#")
+                            i.fa.fa-twitter
+                    li.nav-item
+                        a.nav-link(href="#")
+                            i.fa.fa-flickr
+                            
         .container
             nav.navbar.bg-faded.navbar-primary
                 a.navbar-brand(href="#")
                     strong NSRI Sea Rescue
                 ul.nav.navbar-nav.pull-md-right
-                    li.nav-item
-                        a.nav-link(href="#") Rescue Bases
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Rescue Bases
+                        .dropdown-menu
+                            a.dropdown-item(href='#') XXX
+                            a.dropdown-item(href='#') XXXX
+                            a.dropdown-item(href='#') XXXXX
                     li.nav-item
                         a.nav-link(href="#") Get involved
                     li.nav-item
@@ -39,9 +51,12 @@ html(lang="en")
                     li.nav-item
                         a.btn.btn-success(href="#") Donate
                     li.nav-item
-                        a.btn.btn-danger(href="#")
-                            i.fa.fa-phone
-                            |   Emergency Numbers
+                        button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+                            | Emergency Numbers
+                        .collapse#collapseExample
+                            .card.card-block
+                            | 112
+
         .container
             .content
                 .row
