@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>User Index</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/core.css">
   <style>
     * {
       font-family: Helvetica, Arial, sans-serif;
@@ -23,12 +24,6 @@
 <body>
 
   <h1>Handlebars</h1>
-  {{#each users as |user|}}
-  <div>
-    <img src="/profilepics/{{user.username}}_sm.jpg" alt="">
-    <a href="/{{user.username}}">{{user.name.full}}</a>
-  </div>
-  {{/each}}
 
 </body>
 </html>

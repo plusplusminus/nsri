@@ -4,33 +4,17 @@ var app = express()
 var fs = require('fs')
 var _ = require('lodash')
 var engines = require('consolidate')
+var data = {};
 
-var users = []
-
-fs.readFile('users.json', {encoding: 'utf8'}, function (err, data) {
-  if (err) throw err
-
-  JSON.parse(data).forEach(function (user) {
-    user.name.full = _.startCase(user.name.first + ' ' + user.name.last)
-    users.push(user)
-  })
-
-})
-
-app.engine('hbs', engines.handlebars)
+app.engine('jade', engines.jade)
 
 app.set('views', './views')
-app.set('view engine', 'hbs')
+app.set('view engine', 'jade')
 
-app.use('/profilepics', express.static('images'))
+app.use('/assets', express.static('assets'))
 
 app.get('/', function (req, res) {
-  res.render('index', {users: users})
-})
-
-app.get('/:username', function (req, res) {
-  var username = req.params.username
-  res.render('user', {username: username})
+  res.render('index', {data: data})
 })
 
 var server = app.listen(3000, function () {

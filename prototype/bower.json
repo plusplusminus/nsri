@@ -1,0 +1,21 @@
+{
+  "name": "nsriprototype",
+  "description": "Getting Started with Express",
+  "main": "index.js",
+  "authors": [
+    "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/plusplusminus/nsri",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
