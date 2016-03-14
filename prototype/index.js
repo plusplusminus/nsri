@@ -25,6 +25,14 @@ app.get('/about/values', function (req, res) {
   res.render('pages/about/values', {data: data})
 })
 
+app.get('/blog', function (req, res) {
+  res.render('posts/index', {data: data})
+})
+
+app.get('/blog/category', function (req, res) {
+  res.render('posts/category', {data: data})
+})
+
 app.get('/posts/single', function (req, res) {
   res.render('posts/single', {data: data})
 })
