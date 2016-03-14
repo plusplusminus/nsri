@@ -12,6 +12,7 @@ app.set('views', './views')
 app.set('view engine', 'jade')
 
 app.use('/assets', express.static('assets'))
+app.use('/bower', express.static('bower_components'))
 
 app.get('/', function (req, res) {
   res.render('index', {data: data})

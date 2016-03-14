@@ -1,6 +1,110 @@
 doctype html
 html(lang="en")
-  head
-    title= "User Index"
-  body
-    h1 Jade!
+    head
+        title= "NSRI Prototype"
+        link( href="assets/css/core.css" rel="stylesheet")
+        link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    body
+        nav.navbar.navbar-dark.bg-inverse.small.navbar-fixed-top.navbar-secondary
+            .container
+                form.form-inline.pull-md-right
+                  input.form-control.form-control-sm(type="text" placeholder="Search")
+                  button.btn.btn-primary.btn-sm(type="submit") Search
+                ul.nav.navbar-nav.pull-md-right
+                    li.nav-item
+                        a.nav-link(href="#") Home
+                    li.nav-item
+                        a.nav-link(href="#") About Us
+                    li.nav-item
+                        a.nav-link(href="#") Contact Us
+                    li.nav-item
+                        a.nav-link(href="#") Social
+        .container
+            nav.navbar.bg-faded.navbar-primary
+                a.navbar-brand(href="#")
+                    strong NSRI Sea Rescue
+                ul.nav.navbar-nav.pull-md-right
+                    li.nav-item
+                        a.nav-link(href="#") Rescue Bases
+                    li.nav-item
+                        a.nav-link(href="#") Get involved
+                    li.nav-item
+                        a.nav-link(href="#") Win
+                    li.nav-item
+                        a.nav-link(href="#") Events
+                    li.nav-item
+                        a.nav-link(href="#") Waterwise Acadamy
+                    li.nav-item
+                        a.nav-link(href="#") Safetrx
+                    li.nav-item
+                        a.btn.btn-success(href="#") Donate
+                    li.nav-item
+                        a.btn.btn-danger(href="#")
+                            i.fa.fa-phone
+                            |   Emergency Numbers
+        .container
+            .content
+                .row
+                    .col-md-12
+                        em.lead The Charity That Saves Lives on South African Waters
+                        br
+                        br
+                        br
+                    .col-md-8
+                        .card.story
+                            .card-header
+                                strong Featured Story
+                            img.card-img-top(src="holder.js/100px400")
+                            .card-block
+                                h1.card-title Donec sed odio dui. Fusce dapibus.
+                                p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                                a.btn.btn-primary.btn-lg(href="#")
+                                    |   Read More 
+                                    i.fa.fa-long-arrow-right
+                    .col-md-4
+                        .card.story
+                            .card-header.small
+                                strong Special Focus Story
+                            img.card-img-top(src="holder.js/100px200")
+                            .card-block
+                                h3.card-title Aenean Ridiculus Porta Quam.
+                                a.btn.btn-primary(href="#")
+                                    |   Read More 
+                                    i.fa.fa-long-arrow-right
+                br
+                br
+                .row
+                    each title in ["Cras mattis consectetur purus sit amet fermentum.", "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna mollis euismod."]
+                        .col-md-3
+                            .card.story
+                                img.card-img-top(src="holder.js/100px160")
+                                .card-block
+                                    h4.card-title= title
+                                    a.card-link(href="#")
+                                        |   Read More 
+                                        i.fa.fa-long-arrow-right
+                br
+                br
+                .row
+                    .col-md-12
+                        h2 Rescue Base Finder
+
+                br
+                br
+                .row
+                    .col-md-12
+                        h2 Platinum Partners
+                br
+                br
+        footer.footer
+            .container
+                .row
+                    .col-md-6
+                        p sitemap and links
+                    .col-md-6
+                        p newsletter
+                .row
+                    .col-md-12
+                        p legal &amp; attribution
+
+        script(src="bower/holderjs/holder.js")
