@@ -15,16 +15,28 @@ html(lang="en")
                     ul.nav.navbar-nav.pull-md-right
                         li.nav-item
                             a.nav-link(href="#") Home
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") About
+                            .dropdown-menu
+                                a.dropdown-item(href='#') Our History
+                                a.dropdown-item(href='#') Our Values
+                                a.dropdown-item(href='#') Our Staff
+                                a.dropdown-item(href='#') Our Volunteers
+                                a.dropdown-item(href='#') Our Donors
+                                a.dropdown-item(href='#') Our Board
+                                a.dropdown-item(href='#') Stats
+                                a.dropdown-item(href='#') BBBEE &amp; SARS
+                                a.dropdown-item(href='#') Vacancies
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Contact
+                            .dropdown-menu
+                                a.dropdown-item(href='#') General Info
+                                a.dropdown-item(href='#') Rescue Bases
                         li.nav-item
-                            a.nav-link(href="#") About Us
-                        li.nav-item
-                            a.nav-link(href="#") Contact Us
+                            a.nav-link(href="#") FAQs
                         li.nav-item
                             a.nav-link(href="#")
                                 i.fa.fa-facebook-square
-                        li.nav-item
-                            a.nav-link(href="#")
-                                i.fa.fa-twitter-square
                         li.nav-item
                             a.nav-link(href="#")
                                 i.fa.fa-flickr
@@ -36,24 +48,39 @@ html(lang="en")
                     a.navbar-brand(href="/")
                         strong NSRI Sea Rescue
                     ul.nav.navbar-nav.pull-md-right
-                        li.nav-item
-                            a.nav-link(href="/blog") Blog
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Rescue Bases
                             .dropdown-menu
-                                a.dropdown-item(href='#') XXX
-                                a.dropdown-item(href='#') XXXX
-                                a.dropdown-item(href='#') XXXXX
+                                a.dropdown-item(href='#') Inland
+                                a.dropdown-item(href='#') Helicopter Service
+                                a.dropdown-item(href='#') Kwazulu Natal
+                                a.dropdown-item(href='#') Southern Cape
+                                a.dropdown-item(href='#') Eastern Cape
+                                a.dropdown-item(href='#') Western Cape
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Get Involved
+                            .dropdown-menu
+                                a.dropdown-item(href='#') Membership Options
+                                a.dropdown-item(href='#') Donate
+                                a.dropdown-item(href='#') Volunteer Your Time
+                                a.dropdown-item(href='#') Sponsor a Boat
                         li.nav-item
-                            a.nav-link(href="#") Get Involved
-                        li.nav-item
-                            a.nav-link(href="#") Win
-                        li.nav-item
-                            a.nav-link(href="#") Events
-                        li.nav-item
-                            a.nav-link(href="#") Waterwise Acadamy
+                            a.nav-link(href="#") Waterwise Academy
                         li.nav-item
                             a.nav-link(href="#") SafeTrx
+                        li.nav-item
+                            a.nav-link(href="#") Events
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Newsroom
+                            .dropdown-menu
+                                a.dropdown-item(href="/blog") Blog
+                                a.dropdown-item(href="/blog") Publications
+                                a.dropdown-item(href='#') Press
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Win
+                            .dropdown-menu
+                                a.dropdown-item(href='#') Win Cash
+                                a.dropdown-item(href='#') Win a Mitsubishi
             .container
                 br
                 .row
@@ -68,9 +95,9 @@ html(lang="en")
                                 button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
                                     i.fa.fa-phone
                                     |  Emergency Numbers
-                                .collapse#collapseExample
-                                    .card.card-block
-                                    | 112
+                                #collapseExample.collapse
+                                    .card.card-block(style='text-align:right;')
+                                        | 112
         block content
 
         block foot
