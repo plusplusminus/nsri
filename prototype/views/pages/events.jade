@@ -1,0 +1,83 @@
+extends ../layouts/layout.jade
+
+block content
+    .container
+        .content
+            .row
+                .col-md-8
+                    ul.nav.nav-pills.small
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#') By Region
+                            .dropdown-menu
+                                a.dropdown-item(href='#') Gauteng
+                                a.dropdown-item(href='#') Western Cape
+                                a.dropdown-item(href='#') Kwazulu Natal
+                                a.dropdown-item(href='#') ...
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#') By Date
+                            .dropdown-menu
+                                a.dropdown-item(href='#') This Month
+                                a.dropdown-item(href='#') Next Month
+                                a.dropdown-item(href='#') ...
+                        
+                        form.form-inline.pull-md-right
+                                input.form-control.form-control-sm(type="text" placeholder="Search")
+                                button.btn.btn-primary.btn-sm(type="submit") Search                            
+            br        
+            .row
+                .col-md-8
+                    .card.story
+                        .card-header
+                            strong Featured Event
+                        img.card-img-top(src="holder.js/100px395?text=Poster")
+                        .card-block
+                            span.label.label-default Category
+                            h1.card-title Event Name.
+                            p.small
+                                strong 23 January 2016
+                            p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                            a.btn.btn-primary.btn-lg(href="/posts/single")
+                                |   Read More 
+                                i.fa.fa-long-arrow-right
+                .col-md-4
+                    .row
+                        .col-md-12
+                            .card.story
+                                .card-header.small
+                                    strong Calendar
+                                img.card-img-top(src="holder.js/100px400?text=Calendar")
+                                .card-block
+                                    span.label.label-default Category
+                                    h3.card-title Event Name.
+                                    p.small
+                                        strong 23 January 2016
+                                    p.card-text.lead Cras mattis consectetur purus sit.
+                                    a.btn.btn-primary(href="/posts/single")
+                                        |   Read More 
+                                        i.fa.fa-long-arrow-right
+                                            .row
+                            br
+                            a.btn.btn-success.btn-lg(href="#", style="margin-left:55px;") Volunteer at an Event
+            br
+            h2 Upcoming Events
+            br
+            .card-deck
+                each title in ["Cras mattis consectetur purus sit amet.", "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna."]
+                    .card.story
+                        img.card-img-top(src="holder.js/100px160")
+                        .card-block
+                            span.label.label-default Category
+                            span.label.label-default Rescue Base Name
+                            h4.card-title= title
+                            p.small
+                                strong 4 March 2016
+                            a.card-link(href="/posts/single")
+                                |   Read More 
+                                i.fa.fa-long-arrow-right
+            br
+            .row
+                .col-md-12
+                    .read-more.text-center
+                        a.btn.btn-primary(href="#")
+                            | Load More 
+            br
