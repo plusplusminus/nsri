@@ -24,9 +24,12 @@ block content
                     .card.story
                         img.card-img-top(src="holder.js/100px200?text=Winner")
                         .card-block
-                            h4.card-title Winner's Name
+                            h4.card-title= title
                             p.small
-                                strong Competition Name
+                                strong 4 March 2016
+                            a.card-link(href="/posts/single")
+                                |   Read More 
+                                i.fa.fa-long-arrow-right
 
             br
             .card-deck
@@ -35,6 +38,7 @@ block content
                         img.card-img-top(src="holder.js/100px160")
                         .card-block
                             span.label.label-default Category
+                            &nbsp;
                             span.label.label-default Rescue Base Name
                             h4.card-title= title
                             p.small
@@ -47,5 +51,5 @@ block content
                 .col-md-12
                     .read-more.text-center
                         a.btn.btn-primary(href="#")
-                            | View more 
+                            | View More 
                             i.fa.fa-long-arrow-right

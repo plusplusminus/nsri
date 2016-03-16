@@ -53,6 +53,10 @@ app.get('/pages/win', function (req, res) {
   res.render('pages/win', {data: data})
 })
 
+app.get('/pages/involved', function (req, res) {
+  res.render('pages/involved', {data: data})
+})
+
 var server = app.listen(3000, function () {
   console.log('Server running at http://localhost:' + server.address().port)
 })
