@@ -45,9 +45,9 @@ html(lang="en")
                                 i.fa.fa-rss-square
             .container
                 nav.navbar.bg-faded.navbar-primary
-                    a.navbar-brand(href="/")
-                        strong NSRI Sea Rescue
-                    ul.nav.navbar-nav.pull-md-right
+                    a.navbar-brand
+                        img(src="holder.js/200x100?text=Logos")
+                    ul.nav.navbar-nav.pull-md-right(style='padding-top:35px;')
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Rescue Bases
                             .dropdown-menu
@@ -65,9 +65,9 @@ html(lang="en")
                                 a.dropdown-item(href='#') Volunteer Your Time
                                 a.dropdown-item(href='#') Sponsor a Boat
                         li.nav-item
-                            a.nav-link(href="#") Waterwise Academy
+                            a.nav-link(href="/pages/waterwise") Waterwise Academy
                         li.nav-item
-                            a.nav-link(href="#") SafeTrx
+                            a.nav-link(href="/pages/safetrx") SafeTRX
                         li.nav-item
                             a.nav-link(href="#") Events
                         li.nav-item.dropdown
@@ -103,14 +103,22 @@ html(lang="en")
         block foot
             footer.footer
                 .container
+                    br
                     .row
                         .col-md-6
-                            p sitemap and links
+                            p(style='color=#fff; font-size:12px;') Sitemap &amp; Links
+                            p(style='color=#fff; font-size:12px;') Legal &amp; Attribution
                         .col-md-6
-                            p newsletter
-                    .row
-                        .col-md-12
-                            p legal &amp; attribution
+                            p(style='color=#fff; font-size:12px;') Sign up to receive our newsletter
+                            form(style='color=#fff; font-size:12px;' name="input", action="html_form_action.asp", method="get")
+                                | Name&nbsp;
+                                input(style='padding-right:5px;' type="text", name="name")
+
+                                | &nbsp;Email&nbsp;
+                                input(style='color=#fff; font-size:12px;' type="text", name="email")
+                                &nbsp;
+                                input(style='color=#fff; font-size:12px;' type="submit", value="Submit")
+                    br 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")
             script(src="../bower/bootstrap/dist/js/bootstrap.min.js")
