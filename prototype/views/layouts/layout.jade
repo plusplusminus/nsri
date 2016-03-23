@@ -14,7 +14,7 @@ html(lang="en")
                       button.btn.btn-primary.btn-sm(type="submit") Search
                     ul.nav.navbar-nav.pull-md-right
                         li.nav-item
-                            a.nav-link(href="#") Home
+                            a.nav-link(href="/") Home
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") About
                             .dropdown-menu
@@ -33,7 +33,7 @@ html(lang="en")
                                 a.dropdown-item(href='#') General Info
                                 a.dropdown-item(href='#') Rescue Bases
                         li.nav-item
-                            a.nav-link(href="#") FAQs
+                            a.nav-link(href="/pages/faq") FAQs
                         li.nav-item
                             a.nav-link(href="#")
                                 i.fa.fa-facebook-square
@@ -45,18 +45,18 @@ html(lang="en")
                                 i.fa.fa-rss-square
             .container
                 nav.navbar.bg-faded.navbar-primary
-                    a.navbar-brand
-                        img(src="holder.js/200x100?text=Logos", href="#")
+                    a.navbar-brand(href="/")
+                        img(src="holder.js/250x100?text=Logos")
                     ul.nav.navbar-nav.pull-md-right(style='padding-top:35px;')
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Rescue Bases
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/bases") Rescue Bases
                             .dropdown-menu
-                                a.dropdown-item(href='#') Inland
-                                a.dropdown-item(href='#') Helicopter Service
-                                a.dropdown-item(href='#') Kwazulu Natal
-                                a.dropdown-item(href='#') Southern Cape
-                                a.dropdown-item(href='#') Eastern Cape
-                                a.dropdown-item(href='#') Western Cape
+                                a.dropdown-item(href='/bases/regions') Inland
+                                a.dropdown-item(href='/bases/regions') Helicopter Service
+                                a.dropdown-item(href='/bases/regions') Kwazulu Natal
+                                a.dropdown-item(href='/bases/regions') Southern Cape
+                                a.dropdown-item(href='/bases/regions') Eastern Cape
+                                a.dropdown-item(href='/bases/regions') Western Cape
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/pages/involved") Get Involved
                             .dropdown-menu
@@ -106,18 +106,18 @@ html(lang="en")
                     br
                     .row
                         .col-md-6
-                            p(style='color=#fff; font-size:12px;') Sitemap &amp; Links
-                            p(style='color=#fff; font-size:12px;') Legal &amp; Attribution
+                            p Sitemap &amp; Links
+                            p Legal &amp; Attribution
                         .col-md-6
-                            p(style='color=#fff; font-size:12px;') Sign up to receive our newsletter
+                            p Sign up to receive our newsletter
                             form(style='color=#fff; font-size:12px;' name="input", action="html_form_action.asp", method="get")
                                 | Name&nbsp;
                                 input(style='padding-right:5px;' type="text", name="name")
 
                                 | &nbsp;Email&nbsp;
-                                input(style='color=#fff; font-size:12px;' type="text", name="email")
+                                input(type="text", name="email")
                                 &nbsp;
-                                input(style='color=#fff; font-size:12px;' type="submit", value="Submit")
+                                input(type="submit", value="Submit")
                     br 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")

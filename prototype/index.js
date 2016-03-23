@@ -37,6 +37,10 @@ app.get('/posts/single', function (req, res) {
   res.render('posts/single', {data: data})
 })
 
+app.get('/pages/faq', function (req, res) {
+  res.render('pages/faq', {data: data})
+})
+
 app.get('/pages/waterwise', function (req, res) {
   res.render('pages/waterwise', {data: data})
 })
@@ -55,6 +59,10 @@ app.get('/pages/win', function (req, res) {
 
 app.get('/pages/involved', function (req, res) {
   res.render('pages/involved', {data: data})
+})
+
+app.get('/bases/regions', function (req, res) {
+  res.render('bases/regions', {data: data})
 })
 
 var server = app.listen(3000, function () {
