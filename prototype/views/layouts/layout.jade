@@ -19,7 +19,7 @@ html(lang="en")
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") About
                             .dropdown-menu
                                 a.dropdown-item(href='#') Our History
-                                a.dropdown-item(href='#') Our Values
+                                a.dropdown-item(href='/about/values') Our Values
                                 a.dropdown-item(href='#') Our Staff
                                 a.dropdown-item(href='#') Our Volunteers
                                 a.dropdown-item(href='#') Our Donors
@@ -110,14 +110,12 @@ html(lang="en")
                             p Legal &amp; Attribution
                         .col-md-6
                             p Sign up to receive our newsletter
-                            form(style='color=#fff; font-size:12px;' name="input", action="html_form_action.asp", method="get")
+                            form(name="input", action="html_form_action.asp", method="get")
                                 | Name&nbsp;
                                 input(style='padding-right:5px;' type="text", name="name")
-
                                 | &nbsp;Email&nbsp;
                                 input(type="text", name="email")
-                                &nbsp;
-                                input(type="submit", value="Submit")
+                                input.btn-primary(style='margin-left:5px; border:none; padding: 4px 10px;', type="submit", value="Submit")
                     br 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")

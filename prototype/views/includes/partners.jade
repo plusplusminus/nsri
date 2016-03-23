@@ -1,10 +1,9 @@
 h2 Platinum Partners
 br
 .container
-    .card-deck
-        each image in [(src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo"),(src="holder.js/100px100?text=Partner Logo"), (src="holder.js/100px100?text=Partner Logo")]
-            .card.story
-                img.card-img-top= image
-                .card-block
-                    h5.card-title= title
-            
+	.content
+		.card-deck
+			each title in ["Logo", "Logo", "Logo", "Logo", "Logo", "Logo", "Logo", "Logo", "Logo", "Logo"]
+				.card.card-inverse.text-xs-center(style="background-color:#eee")
+					.card-block
+						.card-title(style="color:#eee")= title
