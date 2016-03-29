@@ -18,9 +18,9 @@ html(lang="en")
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") About
                             .dropdown-menu
-                                a.dropdown-item(href='#') Our History
+                                a.dropdown-item(href='/about/history') Our History
                                 a.dropdown-item(href='/about/values') Our Values
-                                a.dropdown-item(href='#') Our Staff
+                                a.dropdown-item(href='/about/staff') Our Staff
                                 a.dropdown-item(href='#') Our Volunteers
                                 a.dropdown-item(href='#') Our Donors
                                 a.dropdown-item(href='#') Our Board
@@ -119,6 +119,7 @@ html(lang="en")
                     br 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")
+            script(src="../bower/tether/dist/js/tether.min.js")
             script(src="../bower/bootstrap/dist/js/bootstrap.min.js")
             script(src="../bower/holderjs/holder.js")
             script(src="../assets/js/general.js")

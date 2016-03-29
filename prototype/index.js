@@ -25,6 +25,14 @@ app.get('/about/values', function (req, res) {
   res.render('pages/about/values', {data: data})
 })
 
+app.get('/about/history', function (req, res) {
+  res.render('pages/about/history', {data: data})
+})
+
+app.get('/about/staff', function (req, res) {
+  res.render('pages/about/staff', {data: data})
+})
+
 app.get('/blog', function (req, res) {
   res.render('posts/index', {data: data})
 })
