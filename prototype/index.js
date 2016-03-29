@@ -33,6 +33,14 @@ app.get('/about/staff', function (req, res) {
   res.render('pages/about/staff', {data: data})
 })
 
+app.get('/about/volunteers', function (req, res) {
+  res.render('pages/about/volunteers', {data: data})
+})
+
+app.get('/about/donors', function (req, res) {
+  res.render('pages/about/donors', {data: data})
+})
+
 app.get('/blog', function (req, res) {
   res.render('posts/index', {data: data})
 })
