@@ -41,6 +41,10 @@ app.get('/about/donors', function (req, res) {
   res.render('pages/about/donors', {data: data})
 })
 
+app.get('/about/board', function (req, res) {
+  res.render('pages/about/board', {data: data})
+})
+
 app.get('/blog', function (req, res) {
   res.render('posts/index', {data: data})
 })

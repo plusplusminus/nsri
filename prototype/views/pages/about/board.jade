@@ -8,14 +8,14 @@ block content
                     .card.single
                         .card-header About Us
                         .card-block
-                            h1.card-title Our Volunteers
+                            h1.card-title Our Board
                             p.small.pull-md-left
                             p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
                             img.thumbnail(src="holder.js/100px400")
                             p.small.text-right
                                 em This is an image caption
                             
-                            h2.card-title Our Top Volunteers
+                            h2.card-title Directors
                             br
                             .media
                                         a.media-left
@@ -24,6 +24,17 @@ block content
                                             h4.media-heading Name
                                             h4.small.media-heading Duties
                                             |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            br
+                            .media
+                                        a.media-left
+                                            img.media-object.staff(src="holder.js/150x150")
+                                        .media-body
+                                            h4.media-heading Name
+                                            h4.small.media-heading Duties
+                                            |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            br
+                            br
+                            h2.card-title Non-Executive Directors
                             br
                             .media
                                         a.media-left
@@ -41,14 +52,57 @@ block content
                                             h4.small.media-heading Duties
                                             |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-                            #myModalVolunteer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+
+                        br    
+                        &nbsp;&nbsp;&nbsp;
+                        a.btn.btn-success(data-toggle='modal', data-target='#myModalPartner') Partner With Us
+                        &nbsp;&nbsp;
+                        a.btn.btn-success(data-toggle='modal', data-target='#myModalVolunteer') Volunteer
+                        &nbsp;&nbsp;
+                        a.btn.btn-primary(href="/about") More About Us
+                        br
+                        br
+
+                        #myModalVolunteer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            .modal-dialog(role='document')
+                                .modal-content
+
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                            span(aria-hidden='true') ×
+                                        h4.modal-title Volunteer
+                                    .modal-body
+                                        form.form-inline
+                                            .form-group
+                                                label(for='exampleInputName2') Name&nbsp;
+                                                input#exampleInputName2.form-control(type='text', placeholder='Jane Doe')
+                                            &nbsp;&nbsp;&nbsp;
+                                            .form-group
+                                                label(for='exampleInputEmail2') Email&nbsp;
+                                                input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com')
+                                        &nbsp;
+                                        
+                                        form
+                                            fieldset.form-group
+                                              label(for='exampleTextarea') In what way are you willing to help? 
+                                              label.small e.g. skills, at events etc.
+                                              textarea#exampleTextarea.form-control(rows='4', placeholder='Jane Doe') 
+                                            br
+                                            .checkbox.small.text-muted
+                                                label
+                                                    input(type='checkbox')
+                                                    |  Sign me up for the NSRI newsletter.
+                                    .modal-footer
+                                        button.btn.btn-primary(type='button', data-dismiss='modal') Submit
+
+                        #myModalPartner.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
                                 .modal-dialog(role='document')
                                     .modal-content
 
                                         .modal-header
                                             button.close(type='button', data-dismiss='modal', aria-label='Close')
                                                 span(aria-hidden='true') ×
-                                            h4.modal-title Volunteer
+                                            h4.modal-title Partner With Us
                                         .modal-body
                                             form.form-inline
                                                 .form-group
@@ -56,15 +110,24 @@ block content
                                                     input#exampleInputName2.form-control(type='text', placeholder='Jane Doe')
                                                 &nbsp;&nbsp;&nbsp;
                                                 .form-group
+                                                    label(for='exampleInputName2') Company&nbsp;
+                                                    input#exampleInputName2.form-control(type='text', placeholder='Jane Doe')
+                                                br
+                                                br
+                                                .form-group
                                                     label(for='exampleInputEmail2') Email&nbsp;
                                                     input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com')
+                                                &nbsp;&nbsp;&nbsp;
+                                                .form-group
+                                                    label(for='exampleInputName2') Phone&nbsp;
+                                                    input#exampleInputName2.form-control(type='text', placeholder='Jane Doe')
+                                                &nbsp;&nbsp;&nbsp;
                                             &nbsp;
                                             
                                             form
                                                 fieldset.form-group
                                                   label(for='exampleTextarea') In what way are you willing to help? 
-                                                  label.small e.g. skills, at events etc.
-                                                  textarea#exampleTextarea.form-control(rows='4', placeholder='Jane Doe') 
+                                                  textarea#exampleTextarea.form-control(rows='8', placeholder='Jane Doe') 
                                                 br
                                                 .checkbox.small.text-muted
                                                     label
@@ -73,15 +136,6 @@ block content
                                         .modal-footer
                                             button.btn.btn-primary(type='button', data-dismiss='modal') Submit
 
-                        br    
-                        &nbsp;&nbsp;&nbsp;
-                        a.btn.btn-success(data-toggle='modal', data-target='#myModalVolunteer') Volunteer
-                        &nbsp;&nbsp;
-                        a.btn.btn-primary(href="/about/vacancies") Vacancies
-                        &nbsp;&nbsp;
-                        a.btn.btn-primary(href="/about") More About Us
-                        br
-                        br
 
                 .col-md-4
                     .card.sidebar
@@ -91,26 +145,18 @@ block content
                                 a.list-group-item(href="/about/history") Our History
                                 a.list-group-item(href="/about/values") Our Values
                                 a.list-group-item(href="/about/staff") Our Staff
-                                a.list-group-item(href="/about/board") Our Board
-                                a.list-group-item.active(href="/about/volunteers") Our Volunteers
+                                a.list-group-item.active(href="/about/board") Our Board
+                                a.list-group-item(href="/about/volunteers") Our Volunteers
                                 a.list-group-item(href="/about/donors") Our Donors
                                 a.list-group-item(href="/about/stats") Stats / Research
                                 a.list-group-item(href="/about/bbbee") BBBEE &amp; SARS
                                 a.list-group-item(href="/about/vacancies") Vacancies
-                    a(href="/about/vacancies")
+                    a(href="/about/donors")
                         .card.story.card-inverse(style="background-color:#555;")
                             .card-block
                                 br
                                 br
-                                h3.card-title Current Vacancies.
-                                br
-                                br
-                    a(href="/pages/waterwise")
-                        .card.story.card-inverse(style="background-color:#333;")
-                            .card-block
-                                br
-                                br
-                                h3.card-title Training Academy.
+                                h3.card-title Partner with us. Meet our donors. 
                                 br
                                 br
                     a(href="/blog")
