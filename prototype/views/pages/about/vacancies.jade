@@ -8,11 +8,11 @@ block content
                     .card.single
                         .card-header About Us
                         .card-block
-                            h1.card-title Our Stats
+                            h1.card-title Our Vacancies
                             p.small.pull-md-left
                             p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
                             br
-                            img.thumbnail(src="holder.js/100px400?text=Main Infographic")
+                            img.thumbnail(src="holder.js/100px400?text=Current Staff")
                             p.small.text-right
                                 em This is an image caption
                             br
@@ -20,62 +20,67 @@ block content
                                 .col-md-12
                                     .card.story.card-inverse(style="background-color:#888")
                                         .card-block
-                                            h3.card-title Stat
+                                            h3.card-title Position
+                                            .card-title.small Division | Location | [Tags?]
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.          
-                                            a.btn.btn-primary.btn-sm.pull-right(href="#") Download Full Report
+                                            a.btn.btn-primary.btn-sm.pull-right(data-toggle='modal', data-target='#myModalApply') Apply
                                             br
                             br
                             .row
                                 .col-md-12
                                     .card.story.card-inverse(style="background-color:#555")
                                         .card-block
-                                            h3.card-title Stat
+                                            h3.card-title Position
+                                            .card-title.small Division | Location | [Tags?]
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.          
-                                            a.btn.btn-primary.btn-sm.pull-right(href="#") Download Full Report
+                                            a.btn.btn-primary.btn-sm.pull-right(data-toggle='modal', data-target='#myModalApply') Apply
                                             br
                             br
                             .row
                                 .col-md-12
                                     .card.story.card-inverse(style="background-color:#888")
                                         .card-block
-                                            h3.card-title Stat
+                                            h3.card-title Position
+                                            .card-title.small Division | Location | [Tags?]
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.          
-                                            a.btn.btn-primary.btn-sm.pull-right(href="#") Download Full Report
+                                            a.btn.btn-primary.btn-sm.pull-right(data-toggle='modal', data-target='#myModalApply') Apply
                                             br
                             br
                             .row
                                 .col-md-12
                                     .card.story.card-inverse(style="background-color:#555")
                                         .card-block
-                                            h3.card-title Stat
+                                            h3.card-title Position
+                                            .card-title.small Division | Location | [Tags?]
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.          
-                                            a.btn.btn-primary.btn-sm.pull-right(href="#") Download Full Report
+                                            a.btn.btn-primary.btn-sm.pull-right(data-toggle='modal', data-target='#myModalApply') Apply
                                             br
                             br
                             .row
                                 .col-md-12
                                     .card.story.card-inverse(style="background-color:#888")
                                         .card-block
-                                            h3.card-title Stat
+                                            h3.card-title Position
+                                            .card-title.small Division | Location | [Tags?]
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.          
-                                            a.btn.btn-primary.btn-sm.pull-right(href="#") Download Full Report
+                                            a.btn.btn-primary.btn-sm.pull-right(data-toggle='modal', data-target='#myModalApply') Apply
                                             br
                             br                
-                            a.btn.btn-success(href="/involved") Get Involved
+                            a.btn.btn-success(href="/involved") Volunteer
                             &nbsp;&nbsp;
-                            a.btn.btn-primary(data-toggle='modal', data-target='#myModalStats') All Reports
+                            a.btn.btn-primary(href="/about/staff") Our Staff
                             br
 
-                            #myModalStats.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            #myModalApply.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
                                 .modal-dialog(role='document')
                                     .modal-content
 
                                         .modal-header
                                             button.close(type='button', data-dismiss='modal', aria-label='Close')
                                                 span(aria-hidden='true') ×
-                                            h4.modal-title Download/Receive Stats
+                                            h4.modal-title Apply
                                         .modal-body
-                                            h5 Select, from the list below, the full stats reports you'd like to receive from the NSRI.
+                                            h5 [Position/Title Selected]
                                             br 
                                             form.form-inline
                                                 .form-group
@@ -88,29 +93,12 @@ block content
                                             br            
                                             form   
                                                 fieldset.form-group
-                                                    label(for='exampleSelect2') Available Research &amp; Stats
-                                                    .small Select one or more
-                                                    select#exampleSelect2.form-control(multiple='')
-                                                        option Doc 1
-                                                        option Doc 2
-                                                        option Doc 3
-                                                        option Doc 4
-                                                        option Doc 1
-                                                        option Doc 2
-                                                        option Doc 3
-                                                        option Doc 4
-                                                //- fieldset.form-group
-                                                //-   label(for='exampleTextarea') Didn't find what you need?
-                                                //- &nbsp;&nbsp;   
-                                                //- textarea#exampleTextarea.form-control(rows='4', placeholder='') 
-                                                //- br
-                                                br
-                                                .checkbox.small.text-muted
-                                                    label
-                                                        input(type='checkbox')
-                                                        |  Sign me up for the NSRI newsletter.
+                                                    label(for='exampleInputFile') Upload CV
+                                                    .text-muted.small Only .pdf format is accepted.
+                                                    input#exampleInputFile.form-control-file(type='file')
+                                                
                                         .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Download/Submit
+                                            button.btn.btn-primary(type='button', data-dismiss='modal') Apply
 
                 .col-md-4
                     .card.sidebar
@@ -123,9 +111,9 @@ block content
                                 a.list-group-item(href="/about/board") Our Board
                                 a.list-group-item(href="/about/volunteers") Our Volunteers
                                 a.list-group-item(href="/about/donors") Our Donors
-                                a.list-group-item.active(href="/about/stats") Stats
+                                a.list-group-item(href="/about/stats") Stats
                                 a.list-group-item(href="/about/bbbee") BBBEE &amp; SARS
-                                a.list-group-item(href="/about/vacancies") Vacancies
+                                a.list-group-item.active(href="/about/vacancies") Vacancies
                     a(href="/blog")
                         .card.story
                             .card-header.small
