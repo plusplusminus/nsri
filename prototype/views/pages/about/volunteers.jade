@@ -50,28 +50,31 @@ block content
                                                 span(aria-hidden='true') ×
                                             h4.modal-title Volunteer
                                         .modal-body
-                                            form.form-inline
+                                            form
                                                 .form-group
-                                                    label(for='exampleInputName2') Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='Jane Doe')
-                                                &nbsp;&nbsp;&nbsp;
+                                                    label(for='exampleInputName2') Full Name&nbsp;
+                                                    input#exampleInputName2.form-control(type='text', placeholder='')
                                                 .form-group
-                                                    label(for='exampleInputEmail2') Email&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='jane.doe@example.com')
-                                            &nbsp;
-                                            
+                                                    label(for='exampleInputEmail2') Email address&nbsp;
+                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
                                             form
                                                 fieldset.form-group
-                                                  label(for='exampleTextarea') In what way are you willing to help? 
+                                                  label(for='exampleTextarea') In what way are you willing to help?&nbsp; 
                                                   label.small e.g. skills, at events etc.
-                                                  textarea#exampleTextarea.form-control(rows='4', placeholder='Jane Doe') 
-                                                br
-                                                .checkbox.small.text-muted
-                                                    label
-                                                        input(type='checkbox')
-                                                        |  Sign me up for the NSRI newsletter.
+                                                  textarea#exampleTextarea.form-control(rows='4', placeholder='') 
+                                            br
+                                            .checkbox.small.text-muted
+                                                label
+                                                    input(type='checkbox')
+                                                    |   I agree to the 
+                                                    a(href="#")
+                                                        |   Terms &amp; Conditions.
+                                            .checkbox.small.text-muted
+                                                label
+                                                    input(type='checkbox')
+                                                    |   Sign me up for the NSRI newsletter.
                                         .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Submit
+                                            button.btn.btn-primary(type='button', data-dismiss='modal') Sign Up
 
                         br    
                         &nbsp;&nbsp;&nbsp;

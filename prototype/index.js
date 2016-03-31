@@ -77,27 +77,31 @@ app.get('/posts/single', function (req, res) {
   res.render('posts/single', {data: data})
 })
 
-app.get('/pages/faq', function (req, res) {
+app.get('/faq', function (req, res) {
   res.render('pages/faq', {data: data})
 })
 
-app.get('/pages/waterwise', function (req, res) {
+app.get('/waterwise', function (req, res) {
   res.render('pages/waterwise', {data: data})
 })
 
-app.get('/pages/safetrx', function (req, res) {
+app.get('/safetrx', function (req, res) {
   res.render('pages/safetrx', {data: data})
 })
 
-app.get('/pages/events', function (req, res) {
+app.get('/events', function (req, res) {
   res.render('pages/events', {data: data})
 })
 
-app.get('/pages/win', function (req, res) {
+app.get('/win', function (req, res) {
   res.render('pages/win', {data: data})
 })
 
-app.get('/pages/involved', function (req, res) {
+app.get('/winners', function (req, res) {
+  res.render('pages/winners', {data: data})
+})
+
+app.get('/involved', function (req, res) {
   res.render('pages/involved', {data: data})
 })
 

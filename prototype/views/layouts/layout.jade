@@ -11,12 +11,13 @@ html(lang="en")
                 .container
                     form.form-inline.pull-md-right
                       input.form-control.form-control-sm(type="text" placeholder="Search")
+                      &nbsp;
                       button.btn.btn-primary.btn-sm(type="submit") Search
                     ul.nav.navbar-nav.pull-md-right
                         li.nav-item
                             a.nav-link(href="/") Home
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") About
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="") About
                             .dropdown-menu
                                 a.dropdown-item(href='/about/history') Our History
                                 a.dropdown-item(href='/about/values') Our Values
@@ -33,7 +34,7 @@ html(lang="en")
                                 a.dropdown-item(href='/contact/general') General Info
                                 a.dropdown-item(href='/contact/bases') Rescue Bases
                         li.nav-item
-                            a.nav-link(href="/pages/faq") FAQs
+                            a.nav-link(href="/faq") FAQs
                         li.nav-item
                             a.nav-link(href="http://www.facebook.com/?ref=home#!/SeaRescue?ref=ts")
                                 i.fa.fa-facebook-square
@@ -49,48 +50,48 @@ html(lang="en")
                         img(src="holder.js/250x100?text=Logos")
                     ul.nav.navbar-nav.pull-md-right(style='padding-top:35px;')
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/bases") Rescue Bases
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/contact/bases") Rescue Bases
                             .dropdown-menu
-                                a.dropdown-item(href='/bases/regions') Inland
-                                a.dropdown-item(href='/bases/regions') Helicopter Service
-                                a.dropdown-item(href='/bases/regions') Kwazulu Natal
-                                a.dropdown-item(href='/bases/regions') Southern Cape
-                                a.dropdown-item(href='/bases/regions') Eastern Cape
-                                a.dropdown-item(href='/bases/regions') Western Cape
+                                a.dropdown-item(href='/contact/bases#basefinder') Inland
+                                a.dropdown-item(href='/contact/bases#basefinder') Helicopter Service
+                                a.dropdown-item(href='/contact/bases#basefinder') Kwazulu Natal
+                                a.dropdown-item(href='/contact/bases#basefinder') Southern Cape
+                                a.dropdown-item(href='/contact/bases#basefinder') Eastern Cape
+                                a.dropdown-item(href='/contact/bases#basefinder') Western Cape
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/pages/involved") Get Involved
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/involved") Get Involved
                             .dropdown-menu
-                                a.dropdown-item(href='/pages/involved') Membership Options
-                                a.dropdown-item(href='/pages/involved') Donate
-                                a.dropdown-item(href='/pages/involved') Volunteer Your Time
-                                a.dropdown-item(href='/pages/involved') Sponsor a Boat
+                                a.dropdown-item(href="/involved#membership") Membership Options
+                                a.dropdown-item(href="/involved#donate") Donate
+                                a.dropdown-item(href="/involved#volunteer") Volunteer Your Time
+                                a.dropdown-item(href="/involved#sponsor") Sponsor a Boat
                         li.nav-item
-                            a.nav-link(href="/pages/waterwise") Waterwise Academy
+                            a.nav-link(href="/waterwise") Waterwise Academy
                         li.nav-item
-                            a.nav-link(href="/pages/safetrx") SafeTRX
+                            a.nav-link(href="/safetrx") SafeTRX
                         li.nav-item
-                            a.nav-link(href="/pages/events") Events
+                            a.nav-link(href="/events") Events
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Newsroom
                             .dropdown-menu
                                 a.dropdown-item(href="/blog") Blog
                                 a.dropdown-item(href="/blog") Publications
-                                a.dropdown-item(href='#') Press
+                                a.dropdown-item(href='/blog') Press
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/pages/win") Win
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/win") Win
                             .dropdown-menu
-                                a.dropdown-item(href='/pages/win') Win Cash
-                                a.dropdown-item(href='/pages/win') Win a Mitsubishi
+                                a.dropdown-item(href='/win') Win Cash
+                                a.dropdown-item(href='/win') Win a Mitsubishi
             .container
                 br
                 .row
                     .col-md-8
-                        p.lead
+                        h4
                             em The Charity that Saves Lives on South African Waters
                     .col-md-4
                         ul.nav.navbar-nav.pull-md-right
                             li.nav-item
-                                a.btn.btn-success(href="#") Donate
+                                a.btn.btn-success(href="/involved#donate") Donate
                             li.nav-item
                                 button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
                                     i.fa.fa-phone
@@ -99,9 +100,9 @@ html(lang="en")
                                     .card.card-block(style='text-align:right;')
                                         a(href="tel:112") 112
                                     .card.card-block(style='text-align:right;')
-                                        a(href="/contact/bases") Craig 082 380 3800
+                                        a(href="tel:0823803800") Craig 082 380 3800
                                     .card.card-block(style='text-align:right;')
-                                        a(href="/contact/bases") Meriel 082 994 7555
+                                        a(href="tel:0829947555") Meriel 082 994 7555
 
         block content
 
