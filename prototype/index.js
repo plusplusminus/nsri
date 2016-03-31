@@ -57,6 +57,14 @@ app.get('/about/vacancies', function (req, res) {
   res.render('pages/about/vacancies', {data: data})
 })
 
+app.get('/contact/general', function (req, res) {
+  res.render('pages/contact/general', {data: data})
+})
+
+app.get('/contact/bases', function (req, res) {
+  res.render('pages/contact/bases', {data: data})
+})
+
 app.get('/blog', function (req, res) {
   res.render('posts/index', {data: data})
 })
@@ -91,10 +99,6 @@ app.get('/pages/win', function (req, res) {
 
 app.get('/pages/involved', function (req, res) {
   res.render('pages/involved', {data: data})
-})
-
-app.get('/bases/regions', function (req, res) {
-  res.render('bases/regions', {data: data})
 })
 
 var server = app.listen(3000, function () {

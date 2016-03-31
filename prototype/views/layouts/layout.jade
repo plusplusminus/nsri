@@ -28,20 +28,20 @@ html(lang="en")
                                 a.dropdown-item(href='/about/bbbee') BBBEE &amp; SARS
                                 a.dropdown-item(href='/about/vacancies') Vacancies
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Contact
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/contact/general") Contact
                             .dropdown-menu
-                                a.dropdown-item(href='#') General Info
-                                a.dropdown-item(href='#') Rescue Bases
+                                a.dropdown-item(href='/contact/general') General Info
+                                a.dropdown-item(href='/contact/bases') Rescue Bases
                         li.nav-item
                             a.nav-link(href="/pages/faq") FAQs
                         li.nav-item
-                            a.nav-link(href="#")
+                            a.nav-link(href="http://www.facebook.com/?ref=home#!/SeaRescue?ref=ts")
                                 i.fa.fa-facebook-square
                         li.nav-item
-                            a.nav-link(href="#")
+                            a.nav-link(href="http://www.flickr.com/photos/searescue/")
                                 i.fa.fa-flickr
                         li.nav-item
-                            a.nav-link(href="#")
+                            a.nav-link(href="http://www.nsri.org.za/feed/")
                                 i.fa.fa-rss-square
             .container
                 nav.navbar.bg-faded.navbar-primary
@@ -97,7 +97,12 @@ html(lang="en")
                                     |  Emergency Numbers
                                 #collapseExample.collapse
                                     .card.card-block(style='text-align:right;')
-                                        | 112
+                                        a(href="tel:112") 112
+                                    .card.card-block(style='text-align:right;')
+                                        a(href="/contact/bases") Craig 082 380 3800
+                                    .card.card-block(style='text-align:right;')
+                                        a(href="/contact/bases") Meriel 082 994 7555
+
         block content
 
         block foot
