@@ -45,6 +45,18 @@ app.get('/about/board', function (req, res) {
   res.render('pages/about/board', {data: data})
 })
 
+app.get('/about/stats', function (req, res) {
+  res.render('pages/about/stats', {data: data})
+})
+
+app.get('/about/bbbee', function (req, res) {
+  res.render('pages/about/bbbee', {data: data})
+})
+
+app.get('/about/vacancies', function (req, res) {
+  res.render('pages/about/vacancies', {data: data})
+})
+
 app.get('/blog', function (req, res) {
   res.render('posts/index', {data: data})
 })
