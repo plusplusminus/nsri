@@ -12,7 +12,7 @@ html(lang="en")
                     form.form-inline.pull-md-right
                       input.form-control.form-control-sm(type="text" placeholder="Search")
                       &nbsp;
-                      button.btn.btn-primary.btn-sm(type="submit") Search
+                      button.btn.btn-primary.btn-sm(style='margin-left:5px; border-radius: 0; padding: 4px 10px;', type="submit") Search
                     ul.nav.navbar-nav.pull-md-right
                         li.nav-item
                             a.nav-link(href="/") Home
@@ -52,36 +52,35 @@ html(lang="en")
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/contact/bases") Rescue Bases
                             .dropdown-menu
-                                a.dropdown-item(href='/contact/bases#basefinder') Inland
-                                a.dropdown-item(href='/contact/bases#basefinder') Helicopter Service
-                                a.dropdown-item(href='/contact/bases#basefinder') Kwazulu Natal
-                                a.dropdown-item(href='/contact/bases#basefinder') Southern Cape
-                                a.dropdown-item(href='/contact/bases#basefinder') Eastern Cape
-                                a.dropdown-item(href='/contact/bases#basefinder') Western Cape
-                        li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/involved") Get Involved
-                            .dropdown-menu
-                                a.dropdown-item(href="/involved#membership") Membership Options
-                                a.dropdown-item(href="/involved#donate") Donate
-                                a.dropdown-item(href="/involved#volunteer") Volunteer Your Time
-                                a.dropdown-item(href="/involved#sponsor") Sponsor a Boat
+                                a.dropdown-item(href='/contact/bases') Inland
+                                a.dropdown-item(href='/contact/bases') Helicopter Service
+                                a.dropdown-item(href='/contact/bases') Kwazulu Natal
+                                a.dropdown-item(href='/contact/bases') Southern Cape
+                                a.dropdown-item(href='/contact/bases') Eastern Cape
+                                a.dropdown-item(href='/contact/bases') Western Cape
+                        li.nav-item
+                            a.nav-link(href="/involved") Get Involved
                         li.nav-item
                             a.nav-link(href="/waterwise") Waterwise Academy
                         li.nav-item
                             a.nav-link(href="/safetrx") SafeTRX
                         li.nav-item
                             a.nav-link(href="/events") Events
-                        li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Newsroom
-                            .dropdown-menu
-                                a.dropdown-item(href="/blog") Blog
-                                a.dropdown-item(href="/blog") Publications
-                                a.dropdown-item(href='/blog') Press
-                        li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/win") Win
-                            .dropdown-menu
-                                a.dropdown-item(href='/win') Win Cash
-                                a.dropdown-item(href='/win') Win a Mitsubishi
+                        li.nav-item
+                            a.nav-link(href="/blog") Newsroom
+                        //- li.nav-item.dropdown
+                        //-     a.nav-link.dropdown-toggle(data-toggle="dropdown", href="#") Newsroom
+                        //-     .dropdown-menu
+                        //-         a.dropdown-item(href="/blog") Blog
+                        //-         a.dropdown-item(href="/blog") Publications
+                        //-         a.dropdown-item(href='/blog') Press
+                        li.nav-item
+                            a.nav-link(href="/win") Win
+                        //- li.nav-item.dropdown
+                        //-     a.nav-link.dropdown-toggle(data-toggle="dropdown", href="/win") Win
+                        //-     .dropdown-menu
+                        //-         a.dropdown-item(href='/win') Win Cash
+                        //-         a.dropdown-item(href='/win') Win a Mitsubishi
             .container
                 br
                 .row
@@ -106,6 +105,22 @@ html(lang="en")
 
         block content
 
+        block newsletter
+            footer.newsletter
+                .container
+                    br
+                    .row
+                        p(style="padding-left: 37%;") Sign up to receive our newsletter   
+                    .row
+                        .col-md-9.col-md-offset-3
+                            form(name="input", action="html_form_action.asp", method="get")
+                                | Name&nbsp;
+                                input(style='padding-right:5px;' type="text", name="name")
+                                | &nbsp;Email&nbsp;
+                                input(type="text", name="email")
+                                input.btn-primary(style='margin-left:5px; border:none; padding: 4px 10px;', type="submit", value="Submit")
+                    br 
+
         block foot
             footer.footer
                 .container
@@ -113,15 +128,8 @@ html(lang="en")
                     .row
                         .col-md-6
                             p Sitemap &amp; Links
-                            p Legal &amp; Attribution
                         .col-md-6
-                            p Sign up to receive our newsletter
-                            form(name="input", action="html_form_action.asp", method="get")
-                                | Name&nbsp;
-                                input(style='padding-right:5px;' type="text", name="name")
-                                | &nbsp;Email&nbsp;
-                                input(type="text", name="email")
-                                input.btn-primary(style='margin-left:5px; border:none; padding: 4px 10px;', type="submit", value="Submit")
+                            p Legal &amp; Attribution
                     br 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")
