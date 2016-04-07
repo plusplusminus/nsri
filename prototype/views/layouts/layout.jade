@@ -90,19 +90,22 @@ html(lang="en")
                     .col-md-4
                         ul.nav.navbar-nav.pull-md-right
                             li.nav-item
-                                a.btn.btn-success(href="/involved#donate") Donate
+                                a.btn.btn-success(href="/") Donate
                             li.nav-item
-                                button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', data-parent="#accordion", href="#collapseOne" aria-expanded='true', aria-controls='collapseOne')
+                                button.btn.btn-danger(type='button', data-toggle='modal', data-target='#emergencyModal')
                                     i.fa.fa-phone
                                     |  &nbsp;Emergency Numbers
-                                #collapseExample.collapse
-                                    .card-block(style='text-align:right; padding:5px 0px 2.5px 0px;')
-                                        a(href="tel:112")
-                                            strong(style='color:#b0153c;') 112
-                                    .card-block(style='text-align:right; padding:2.5px 0px 2.5px 0px;')
-                                        a(href="tel:0823803800") Craig 082 380 3800
-                                    .card-block(style='text-align:right; padding:2.5px 0px 5px 0px;')
-                                        a(href="tel:0829947555") Meriel 082 994 7555
+                                //- button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', data-parent="#accordion", href="#collapseOne" aria-expanded='true', aria-controls='collapseOne')
+                                //-     i.fa.fa-phone
+                                //-     |  &nbsp;Emergency Numbers
+                                //- #collapseExample.collapse
+                                //-     .card-block(style='text-align:right; padding:5px 0px 2.5px 0px;')
+                                //-         a(href="tel:112")
+                                //-             strong(style='color:#b0153c;') 112
+                                //-     .card-block(style='text-align:right; padding:2.5px 0px 2.5px 0px;')
+                                //-         a(href="tel:0823803800") Craig 082 380 3800
+                                //-     .card-block(style='text-align:right; padding:2.5px 0px 5px 0px;')
+                                //-         a(href="tel:0829947555") Meriel 082 994 7555
 
         block content
 
@@ -130,7 +133,7 @@ html(lang="en")
                         .col-md-3
                             ul.nav
                                 li.nav-item
-                                    strong About 
+                                    h5 About 
                                 li.nav-item
                                     a.nav-link(href='/about/history') Our History
                                 li.nav-item
@@ -154,7 +157,7 @@ html(lang="en")
                         .col-md-3
                             ul.nav
                                 li.nav-item
-                                    strong Get Involved 
+                                    h5 Get Involved 
                                 li.nav-item
                                     a.nav-link(href='/involved') Donate
                                 li.nav-item
@@ -168,7 +171,7 @@ html(lang="en")
                         .col-md-3
                             ul.nav
                                 li.nav-item
-                                    strong Rescue Bases 
+                                    h5 Rescue Bases 
                                 li.nav-item
                                     a.nav-link(href='/about/history') Inland
                                 li.nav-item
@@ -184,7 +187,7 @@ html(lang="en")
                         .col-md-3
                             ul.nav
                                 li.nav-item
-                                    strong Contact 
+                                    h5 Contact 
                                 li.nav-item
                                     a.nav-link(href='tel:112') Emergencies: 112
                                 li.nav-item
@@ -211,6 +214,52 @@ html(lang="en")
                                     a.nav-link(href="http://www.nsri.org.za/feed/")
                                         i.fa.fa-rss.fa-2x
                     br
+
+
+        #emergencyModal.modal.fade
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4.modal-title Emergency Numbers
+                    .modal-body
+                        .card.card-block
+                            h5.card-title Emergency Number on Your Mobile
+                                h4.card-title.text-danger
+                                    i.fa.fa-phone &nbsp;
+                                    | &nbsp;112
+                        .card.card-block
+                            h5.card-title NSRI Cape Town
+                            .card-title.small 
+                                h6.text-danger
+                                    i.fa.fa-phone
+                                    |  &nbsp;021 449 3500
+
+                                hr
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseBases")
+                                    h6.card-title Other bases in this region
+                                        i.fa.fa-arrow-down.fa-1.pull-right
+                    
+                                #collapseBases.collapse
+                                  table.table.table-hover
+                                    tbody
+                                        tr
+                                            td
+                                                strong NSRI Bakoven
+                                            td
+                                                | Bruce Davidson
+                                            td 
+                                                a(href="tel:0829905962") 082 990 5962
+                                        tr
+                                            td
+                                                strong NSRI Table Bay
+                                            td
+                                                | Pat van Eyssen
+                                            td
+                                                a(href="tel:0829905964") 082 990 5964
+
+                
 
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")
