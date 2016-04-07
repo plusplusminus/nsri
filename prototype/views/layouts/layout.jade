@@ -21,11 +21,11 @@ html(lang="en")
                             .dropdown-menu
                                 a.dropdown-item(href='/about/history') Our History
                                 a.dropdown-item(href='/about/values') Our Values
+                                a.dropdown-item(href='/about/stats') Our Stats
                                 a.dropdown-item(href='/about/staff') Our Staff
                                 a.dropdown-item(href='/about/board') Our Board
                                 a.dropdown-item(href='/about/volunteers') Our Volunteers
                                 a.dropdown-item(href='/about/donors') Our Donors
-                                a.dropdown-item(href='/about/stats') Stats
                                 a.dropdown-item(href='/about/bbbee') BBBEE &amp; SARS
                                 a.dropdown-item(href='/about/vacancies') Vacancies
                         li.nav-item.dropdown
@@ -92,15 +92,16 @@ html(lang="en")
                             li.nav-item
                                 a.btn.btn-success(href="/involved#donate") Donate
                             li.nav-item
-                                button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', aria-expanded='false', aria-controls='collapseExample')
+                                button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', data-parent="#accordion", href="#collapseOne" aria-expanded='true', aria-controls='collapseOne')
                                     i.fa.fa-phone
-                                    |  Emergency Numbers
+                                    |  &nbsp;Emergency Numbers
                                 #collapseExample.collapse
-                                    .card.card-block(style='text-align:right;')
-                                        a(href="tel:112") 112
-                                    .card.card-block(style='text-align:right;')
+                                    .card-block(style='text-align:right; padding:5px 0px 2.5px 0px;')
+                                        a(href="tel:112")
+                                            strong(style='color:#b0153c;') 112
+                                    .card-block(style='text-align:right; padding:2.5px 0px 2.5px 0px;')
                                         a(href="tel:0823803800") Craig 082 380 3800
-                                    .card.card-block(style='text-align:right;')
+                                    .card-block(style='text-align:right; padding:2.5px 0px 5px 0px;')
                                         a(href="tel:0829947555") Meriel 082 994 7555
 
         block content
@@ -126,11 +127,92 @@ html(lang="en")
                 .container
                     br
                     .row
+                        .col-md-3
+                            ul.nav
+                                li.nav-item
+                                    strong About 
+                                li.nav-item
+                                    a.nav-link(href='/about/history') Our History
+                                li.nav-item
+                                    a.nav-link(href='/about/values') Our Values
+                                li.nav-item
+                                    a.nav-link(href='/about/stats') Our Stats
+                                li.nav-item
+                                    a.nav-link(href='/about/staff') Our Staff
+                                li.nav-item
+                                    a.nav-link(href='/about/board') Our Board
+                                li.nav-item
+                                    a.nav-link(href='/about/volunteers') Our Volunteers
+                                li.nav-item
+                                    a.nav-link(href='/about/donors') Our Donors
+                                li.nav-item
+                                    a.nav-link(href='/about/bbbee') BBBEE &amp; SARS
+                                li.nav-item
+                                    a.nav-link(href='/about/vacancies') Vacancies
+                                li.nav-item
+                                    a.nav-link(href='/faq') FAQs
+                        .col-md-3
+                            ul.nav
+                                li.nav-item
+                                    strong Get Involved 
+                                li.nav-item
+                                    a.nav-link(href='/involved') Donate
+                                li.nav-item
+                                    a.nav-link(href='/involved') Membership Options
+                                li.nav-item
+                                    a.nav-link(href='/involved') Volunteer
+                                li.nav-item
+                                    a.nav-link(href='/involved') Sponsor a Boat
+                                li.nav-item
+                                    a.nav-link(href='/involved') Partner with Us
+                        .col-md-3
+                            ul.nav
+                                li.nav-item
+                                    strong Rescue Bases 
+                                li.nav-item
+                                    a.nav-link(href='/about/history') Inland
+                                li.nav-item
+                                    a.nav-link(href='/about/values') Helicopter Service
+                                li.nav-item
+                                    a.nav-link(href='/about/stats') Kwazulu Natal
+                                li.nav-item
+                                    a.nav-link(href='/about/staff') Southern Cape
+                                li.nav-item
+                                    a.nav-link(href='/about/board') Eastern Cape
+                                li.nav-item
+                                    a.nav-link(href='/about/volunteers') Western Cape
+                        .col-md-3
+                            ul.nav
+                                li.nav-item
+                                    strong Contact 
+                                li.nav-item
+                                    a.nav-link(href='tel:112') Emergencies: 112
+                                li.nav-item
+                                    a.nav-link(href='/contact/bases') Rescue Bases
+                                li.nav-item
+                                    a.nav-link(href='/contact/general') Head Office
+                    br
+                    br
+            footer.footer
+                .container
+                    br
+                    .row
                         .col-md-6
-                            p Sitemap &amp; Links
+                            p
+                                strong Legal &amp; Attribution
                         .col-md-6
-                            p Legal &amp; Attribution
-                    br 
+                            ul.nav.navbar-nav.pull-md-right
+                                li.nav-item
+                                    a.nav-link(href="http://www.facebook.com/?ref=home#!/SeaRescue?ref=ts")
+                                        i.fa.fa-facebook.fa-2x
+                                li.nav-item
+                                    a.nav-link(href="http://www.flickr.com/photos/searescue/")
+                                        i.fa.fa-flickr.fa-2x
+                                li.nav-item
+                                    a.nav-link(href="http://www.nsri.org.za/feed/")
+                                        i.fa.fa-rss.fa-2x
+                    br
+
         block footscripts
             script(src="../bower/jquery/dist/jquery.min.js")
             script(src="../bower/tether/dist/js/tether.min.js")

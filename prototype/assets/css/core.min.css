@@ -723,4 +723,4 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 body{padding-top:4rem}.content{margin-top:1rem}.navbar-secondary form{margin-left:1rem}
 .navbar-primary{border-radius:0}.base-finder button:active,.base-finder button:focus{outline:0}
 .base-finder .card{border-radius:0;border:0}.newsletter{background-color:#bbb;color:#373a3c;font-size:14px}
-.footer{background-color:#373a3c;color:#fff;font-size:14px}
+.footer{background-color:#373a3c;color:#fff;font-size:14px}.footer a{color:#fff}
