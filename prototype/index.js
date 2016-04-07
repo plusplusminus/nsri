@@ -61,6 +61,10 @@ app.get('/contact/general', function (req, res) {
   res.render('pages/contact/general', {data: data})
 })
 
+app.get('/contact/general-full', function (req, res) {
+  res.render('pages/contact/general-full', {data: data})
+})
+
 app.get('/contact/bases', function (req, res) {
   res.render('pages/contact/bases', {data: data})
 })
@@ -95,6 +99,10 @@ app.get('/events', function (req, res) {
 
 app.get('/win', function (req, res) {
   res.render('pages/win', {data: data})
+})
+
+app.get('/single-win', function (req, res) {
+  res.render('pages/single-win', {data: data})
 })
 
 app.get('/winners', function (req, res) {

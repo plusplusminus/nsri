@@ -2,116 +2,126 @@ extends ../layouts/layout.jade
 
 block content
     .container
-        .content       
+        .content
+            .row
+                .col-md-12
+                    ul.nav.nav-pills.small
+                        li.nav-item
+                            a.nav-link.active(href="/blog") Latest
+                        li.nav-item
+                            a.nav-link(href="/blog/category") Rescues
+                        li.nav-item
+                            a.nav-link(href="/blog/category") Projects
+                        li.nav-item
+                            a.nav-link(href="/blog/category") Publications
+                        li.nav-item
+                            a.nav-link(href="/blog/category") Press
+                    br
             .row
                 .col-md-8
-                    .card.single
-                        .card-block
-                            h1.card-title Win Something
-                            .clearfix
-                            img.thumbnail(src="holder.js/100px100?text=Sponsor Banner")
-                            p
-                            p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-                            img.thumbnail(src="holder.js/100px400")
-                            p.small.text-right
-                                em This is an image caption
-                            p Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.
-                            p Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                            a.btn.btn-lg.btn-success(data-toggle='modal', data-target='#myModalDonate') Donate &amp; Enter
-                            &nbsp;
-                            hr
-                            &nbsp;
-                            h4 Terms &amp; Conditions
-                            &nbsp;
-                            ol
-                                li Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero.
-                                li Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero.
-                                li Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero.
-                                li Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero.
-                            br
-                            #myModalDonate.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                                .modal-dialog(role='document')
-                                    .modal-content
-                                        .modal-header
-                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                span(aria-hidden='true') ×
-                                            h4.modal-title Donate Now
-                                        .modal-body
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputName2') Full Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='')
-                                                .form-group
-                                                    label(for='exampleInputEmail2') Email address&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
-                                            form
-                                                .form-group
-                                                    label.sr-only(for='exampleInputAmount') Amount (in South African Rands)
-                                                    .input-group
-                                                        .input-group-addon ZAR
-                                                        input#exampleInputAmount.form-control(type='text', placeholder='Amount')
-                                                        .input-group-addon .00
-                                            br
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   I agree to the 
-                                                    a(href="#")
-                                                        |   Terms &amp; Conditions.
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   Sign me up for the NSRI newsletter.
-                                        .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
+                    .row
+                        .col-md-6
+                            .card.story
+                                .card-header
+                                    strong Featured Recurring Competition
+                                img.card-img-top(src="holder.js/100px400")
+                                .card-block
+                                    h1.card-title Donec sed odio dui. Fusce dapibus.
+                                    p.small
+                                        strong 23 January 2016
+                                    p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                                    a.btn.btn-primary.btn-lg(href="/single-win")
+                                        |   Enter Now 
+                        .col-md-6
+                            .card.story
+                                .card-header
+                                    strong Featured Recurring Competition
+                                img.card-img-top(src="holder.js/100px400")
+                                .card-block
+                                    h1.card-title Donec sed odio dui. Fusce dapibus.
+                                    p.small
+                                        strong 23 January 2016
+                                    p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+                                    a.btn.btn-primary.btn-lg(href="/single-win")
+                                        |   Enter Now
+
+
+
+
 
                 .col-md-4
-                    .card.sidebar
-                        .card-block
-                            h4.card-title Get Involved
-                        .list-group.list-group-flush
-                            a.list-group-item(href="#")
-                                span.label.label-default.label-pill.pull-xs-right
-                                | Donate
-                            a.list-group-item(href="#")
-                                span.label.label-default.label-pill.pull-xs-right
-                                | Volunteer Your Time
-                            a.list-group-item(href="#")
-                                span.label.label-default.label-pill.pull-xs-right
-                                | Sponsor a Boat
-                            a.list-group-item(href="#")
-                                span.label.label-default.label-pill.pull-xs-right
-                                | Membership Options
-                        a(href="#")
-                    .card.story.card-inverse(style="background-color:#333;")
-                        .card-block
-                            br
-                            br
-                            br
-                            h3.card-title Banner for another competition.
-                            br
-                            br
-                            br
-                    a(href="#")
-                    .card.story.card-inverse(style="background-color:#555;")
-                        .card-block
-                            br
-                            br
-                            br
-                            h3.card-title Banner for something else.
-                            br
-                            br
-                            br
-                
+                    .row
+                        .col-md-12
+                            .card.sidebar
+                                .card-block
+                                    h4.card-title.sans Get Involved
+                                    .list-group.list-group-flush
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Donate
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Volunteer Your Time
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Sponsor a Boat
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Membership Options
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Parter with Us
+
+                        .col-md-12
+                            a(href="#")
+                                .card.story.card-inverse(style="background-color:#333;")
+                                    .card-block
+                                        br
+                                        br
+                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                        br
+                                        br
+                        .col-md-12
+                            a(href="#")
+                                .card.story.card-inverse(style="background-color:#ccc;")
+                                    .card-block
+                                        br
+                                        br
+                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                        br
+                                        br
+            //- br
+            //- .card.single
+            //-     .card-block
+            //-         h1.card-title Past Winners
+            //-         .clearfix
+            //-         p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+            //-         br
+            //-         #accordion(role='tablist', aria-multiselectable='true')
+            //-             .panel.panel-default
+            //-                 #headingOne.panel-heading(role='tab')
+            //-                     h4.panel-title
+            //-                         a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+            //-                             | FAQ #1
+            //-                 #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+            //-                     | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. 
+            //-             br
+            //-             .panel.panel-default
+            //-                 #headingTwo.panel-heading(role='tab')
+            //-                     h4.panel-title
+            //-                         a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+            //-                             | FAQ #2
+            //-                 #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+            //-                     | Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. 
+            br
+            .card-deck
+                each title in ["Cras mattis consectetur purus sit amet.", "Morbi leo risus, porta ac consectetur ac, vestibulum at.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna ultricies vehicula."]
                     .card.story
-                        .card-header.small
-                            strong Recent Winner
-                        img.card-img-top(src="holder.js/100px200")
+                        img.card-img-top(src="holder.js/100px160")
                         .card-block
-                            h3.card-title Winner Name
+                            h4.card-title= title
                             p.small
-                                strong Competition Name
-                            a(href="/winners") 
-                                small Winner Archives 
-                                    i.fa.fa-long-arrow-right
+                                strong 4 March 2016
+                            a.btn.btn-primary(href="/single-win")
+                                |   Enter Now
             br
