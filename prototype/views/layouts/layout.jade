@@ -102,27 +102,37 @@ html(lang="en")
             footer.newsletter
                 .container
                     br
+                    br
                     .row
-                        p(style="padding-left: 37%;") Sign up to receive our newsletter   
+                        .col-md-12.text-md-center
+                            h5 Sign up to receive our newsletter   
+                    br
                     .row
-                        .col-md-9.col-md-offset-3
+                        .col-md-6.col-md-offset-3
                             form(name="input", action="html_form_action.asp", method="get")
-                                | Name&nbsp;
-                                input(style='padding-right:5px;' type="text", name="name")
-                                | &nbsp;Email&nbsp;
-                                input(type="text", name="email")
-                                input.btn-primary(style='margin-left:5px; border:none; padding: 4px 10px;', type="submit", value="Submit")
+                                .row
+                                    .form-group.col-md-12
+                                        input.form-control(type="text", name="name" placeholder="Full Name")
+                                .row
+                                    .form-group.col-md-12
+                                        input.form-control(type="text", name="email" placeholder="Email Address")
+                                .row
+                                    .col-md-6.col-md-offset-3
+                                        input.btn.btn-primary.btn-block(type="submit", value="Submit")
+                    br
                     br 
 
         block foot
+
             footer.footer
                 .container
                     br
+                    br
                     .row
                         .col-md-3
-                            ul.nav
+                            ul.nav.small
                                 li.nav-item
-                                    h5 About 
+                                    h5 About Sea Rescue
                                 li.nav-item
                                     a.nav-link(href='/about/history') Our History
                                 li.nav-item
@@ -144,7 +154,7 @@ html(lang="en")
                                 li.nav-item
                                     a.nav-link(href='/faq') FAQs
                         .col-md-3
-                            ul.nav
+                            ul.nav.small
                                 li.nav-item
                                     h5 Get Involved 
                                 li.nav-item
@@ -158,7 +168,7 @@ html(lang="en")
                                 li.nav-item
                                     a.nav-link(href='/involved') Partner with Us
                         .col-md-3
-                            ul.nav
+                            ul.nav.small
                                 li.nav-item
                                     h5 Rescue Bases 
                                 li.nav-item
@@ -174,25 +184,40 @@ html(lang="en")
                                 li.nav-item
                                     a.nav-link(href='/about/volunteers') Western Cape
                         .col-md-3
-                            ul.nav
+                            ul.nav.small
                                 li.nav-item
-                                    h5 Contact 
-                                li.nav-item
-                                    a.nav-link(href='tel:112') Emergencies: 112
+                                    h5 Contact Information
                                 li.nav-item
                                     a.nav-link(href='/contact/bases') Rescue Bases
-                                li.nav-item
-                                    a.nav-link(href='/contact/general') Head Office
+                                br
+                                hr(style="margin-top: 0px; margin-bottom: 0px; border-color: #ccc;")
+                                br
+                                strong Head Office
+                                br
+                                br
+                                strong
+                                    | 021 434 4011
+                                    br
+                                    a(href="mailto:info@searescue.org.za")
+                                        | info@searescue.org.za
+                                    br
+                                    | 1 Glengariff Road, Three Anchor Bay,
+                                    br
+                                    | Cape Town, 8005
+                                    br
+                                    | P.O. Box 154, Green Point, 8051
+
                     br
                     br
+                    hr(style="margin-top: 0px; margin-bottom: 0px; border-color: #ccc;")
             footer.footer
                 .container
                     br
                     .row
                         .col-md-6
-                            strong © 2016 NSRI.
+                            small © 2016 NSRI. Company Reg. No: 1967/013618/08. NPO Reg. No. 002 – 870.
                             br
-                            strong Built by PlusPlusMinus.
+                            small Built by PlusPlusMinus.
                         .col-md-6
                             ul.nav.navbar-nav.pull-md-right
                                 li.nav-item

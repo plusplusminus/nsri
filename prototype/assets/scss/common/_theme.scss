@@ -1,3 +1,7 @@
+.sans{
+	font-family: $font-family-sans-serif !important;
+}
+
 .text-center{
 	text-align: center;
 }
@@ -34,6 +38,9 @@ body{
 	border-radius: 0px;
 }
 
+.card-title {
+	font-family: $font-family-serif;
+}
 
 .base-finder{
 	button{
