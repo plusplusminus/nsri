@@ -95,18 +95,7 @@ html(lang="en")
                                 button.btn.btn-danger(type='button', data-toggle='modal', data-target='#emergencyModal')
                                     i.fa.fa-phone
                                     |  &nbsp;Emergency Numbers
-                                //- button.btn.btn-danger(type='button', data-toggle='collapse', data-target='#collapseExample', data-parent="#accordion", href="#collapseOne" aria-expanded='true', aria-controls='collapseOne')
-                                //-     i.fa.fa-phone
-                                //-     |  &nbsp;Emergency Numbers
-                                //- #collapseExample.collapse
-                                //-     .card-block(style='text-align:right; padding:5px 0px 2.5px 0px;')
-                                //-         a(href="tel:112")
-                                //-             strong(style='color:#b0153c;') 112
-                                //-     .card-block(style='text-align:right; padding:2.5px 0px 2.5px 0px;')
-                                //-         a(href="tel:0823803800") Craig 082 380 3800
-                                //-     .card-block(style='text-align:right; padding:2.5px 0px 5px 0px;')
-                                //-         a(href="tel:0829947555") Meriel 082 994 7555
-
+                                
         block content
 
         block newsletter
@@ -224,9 +213,9 @@ html(lang="en")
                             span(aria-hidden='true') ×
                         h4.modal-title Emergency Numbers
                     .modal-body
-                        .card.card-block
+                        .card.card-block.card-danger(style="color:#fff;")
                             h5.card-title Emergency Number on Your Mobile
-                                h4.card-title.text-danger
+                                h4.card-title
                                     i.fa.fa-phone &nbsp;
                                     | &nbsp;112
                         .card.card-block
@@ -234,14 +223,15 @@ html(lang="en")
                             .card-title.small 
                                 h6.text-danger
                                     i.fa.fa-phone
+                                    a(href="tel:0214493500")
                                     |  &nbsp;021 449 3500
 
                                 hr
-                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseBases")
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseCPT")
                                     h6.card-title Other bases in this region
                                         i.fa.fa-arrow-down.fa-1.pull-right
                     
-                                #collapseBases.collapse
+                                #collapseCPT.collapse
                                   table.table.table-hover
                                     tbody
                                         tr
@@ -258,6 +248,36 @@ html(lang="en")
                                                 | Pat van Eyssen
                                             td
                                                 a(href="tel:0829905964") 082 990 5964
+                        .card.card-block
+                            h5.card-title NSRI Saldanha
+                            .card-title.small 
+                                h6.text-danger
+                                    i.fa.fa-phone
+                                    a(href="tel:0227141726")
+                                    |  &nbsp;022 714 1726
+
+                                hr
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseSaldanha")
+                                    h6.card-title Other bases in this region
+                                        i.fa.fa-arrow-down.fa-1.pull-right
+                    
+                                #collapseSaldanha.collapse
+                                  table.table.table-hover
+                                    tbody
+                                        tr
+                                            td
+                                                strong NSRI Mykonos
+                                            td
+                                                | Casper Frylinck
+                                            td 
+                                                a(href="tel:0829905966") 082 990 5966
+                                        tr
+                                            td
+                                                strong NSRI Table Bay
+                                            td
+                                                | Lambert’s Bay
+                                            td
+                                                a(href="tel:0732214457") 073 221 4457
 
                 
 

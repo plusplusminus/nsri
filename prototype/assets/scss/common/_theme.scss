@@ -12,6 +12,11 @@
 		padding-right: 0.5rem;
 	}
 }
+
+.list-group-item:active {
+	background-color: #eee;
+}
+
 body{
 	padding-top: 4rem;
 }
