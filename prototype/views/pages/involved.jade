@@ -19,7 +19,7 @@ block content
                                         .card-block
                                             h3.card-title Become a Member
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-                                            a.btn.btn-success.btn-sm.pull-right(data-toggle='modal', data-target='#myModalMember') Sign Up Now
+                                            a.btn.btn-success.btn-sm.pull-right(href="/membership") Sign Up Now
                                             br
                             br
                             a(name="donate")
@@ -30,7 +30,7 @@ block content
                                         .card-block
                                             h3.card-title Donate
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.         
-                                            a.btn.btn-success.btn-sm.pull-right(data-toggle='modal', data-target='#myModalDonate') Donate Now
+                                            a.btn.btn-success.btn-sm.pull-right(href="/donate") Donate Now
                                             br
                             br
                             a(name="volunteer")
@@ -41,7 +41,7 @@ block content
                                         .card-block
                                             h5.card-title Volunteer your Time
                                             p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.         
-                                            a.btn.btn-success.btn-sm.pull-right(data-toggle='modal', data-target='#myModalVolunteer') Volunteer Now
+                                            a.btn.btn-success.btn-sm.pull-right(href="/volunteer") Volunteer Now
                                             br
                             br
                             a(name="sponsor")
@@ -54,229 +54,229 @@ block content
                                             a.btn.btn-success.btn-sm.pull-right(data-toggle='modal', data-target='#myModalSponsor') Sponsor Now
                                             br
 
-                            #myModalMember.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                                .modal-dialog(role='document')
-                                    .modal-content
-                                        .modal-header
-                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                span(aria-hidden='true') ×
-                                            h4.modal-title Sign up Now
-                                        .modal-body
-                                            h5 Select one of our NSRI membership options below.
-                                            br
-                                            br
-                                            .radio
-                                                label
-                                                    input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                    .media
-                                                        .media-left
-                                                            img.media-object(src="holder.js/105x105")
-                                                        .media-body
-                                                            h4.media-heading Option 1
-                                                            p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                            br
-                                            .radio
-                                                label
-                                                    input#optionsRadios1(type='radio', name='optionsRadios', value='option2')
-                                                    .media
-                                                        .media-left
-                                                            img.media-object(src="holder.js/105x105")
-                                                        .media-body
-                                                            h4.media-heading Option 2
-                                                            p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                            br
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputName2') Full Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='')
-                                                .form-group
-                                                    label(for='exampleInputEmail2') Email address&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
-                                            br
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   I agree to the 
-                                                    a(href="#")
-                                                        |   Terms &amp; Conditions.
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   Sign me up for the NSRI newsletter.
-                                        .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
+                            //- #myModalMember.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            //-     .modal-dialog(role='document')
+                            //-         .modal-content
+                            //-             .modal-header
+                            //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            //-                     span(aria-hidden='true') ×
+                            //-                 h4.modal-title Sign up Now
+                            //-             .modal-body
+                            //-                 h5 Select one of our NSRI membership options below.
+                            //-                 br
+                            //-                 br
+                            //-                 .radio
+                            //-                     label
+                            //-                         input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                         .media
+                            //-                             .media-left
+                            //-                                 img.media-object(src="holder.js/105x105")
+                            //-                             .media-body
+                            //-                                 h4.media-heading Option 1
+                            //-                                 p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                            //-                 br
+                            //-                 .radio
+                            //-                     label
+                            //-                         input#optionsRadios1(type='radio', name='optionsRadios', value='option2')
+                            //-                         .media
+                            //-                             .media-left
+                            //-                                 img.media-object(src="holder.js/105x105")
+                            //-                             .media-body
+                            //-                                 h4.media-heading Option 2
+                            //-                                 p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                            //-                 br
+                            //-                 form
+                            //-                     .form-group
+                            //-                         label(for='exampleInputName2') Full Name&nbsp;
+                            //-                         input#exampleInputName2.form-control(type='text', placeholder='')
+                            //-                     .form-group
+                            //-                         label(for='exampleInputEmail2') Email address&nbsp;
+                            //-                         input#exampleInputEmail2.form-control(type='email', placeholder='')
+                            //-                 br
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   I agree to the 
+                            //-                         a(href="#")
+                            //-                             |   Terms &amp; Conditions.
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   Sign me up for the NSRI newsletter.
+                            //-             .modal-footer
+                            //-                 button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
 
-                            #myModalDonate.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                                .modal-dialog(role='document')
-                                    .modal-content
-                                        .modal-header
-                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                span(aria-hidden='true') ×
-                                            h4.modal-title Donate Now
-                                        .modal-body
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputName2') Full Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='')
-                                                .form-group
-                                                    label(for='exampleInputEmail2') Email address&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
-                                            form
-                                                .form-group
-                                                    label.sr-only(for='exampleInputAmount') Amount (in South African Rands)
-                                                    .input-group
-                                                        .input-group-addon ZAR
-                                                        input#exampleInputAmount.form-control(type='text', placeholder='Amount')
-                                                        .input-group-addon .00
-                                            br
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   I agree to the 
-                                                    a(href="#")
-                                                        |   Terms &amp; Conditions.
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   Sign me up for the NSRI newsletter.
-                                        .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
+                            //- #myModalDonate.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            //-     .modal-dialog(role='document')
+                            //-         .modal-content
+                            //-             .modal-header
+                            //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            //-                     span(aria-hidden='true') ×
+                            //-                 h4.modal-title Donate Now
+                            //-             .modal-body
+                            //-                 form
+                            //-                     .form-group
+                            //-                         label(for='exampleInputName2') Full Name&nbsp;
+                            //-                         input#exampleInputName2.form-control(type='text', placeholder='')
+                            //-                     .form-group
+                            //-                         label(for='exampleInputEmail2') Email address&nbsp;
+                            //-                         input#exampleInputEmail2.form-control(type='email', placeholder='')
+                            //-                 form
+                            //-                     .form-group
+                            //-                         label.sr-only(for='exampleInputAmount') Amount (in South African Rands)
+                            //-                         .input-group
+                            //-                             .input-group-addon ZAR
+                            //-                             input#exampleInputAmount.form-control(type='text', placeholder='Amount')
+                            //-                             .input-group-addon .00
+                            //-                 br
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   I agree to the 
+                            //-                         a(href="#")
+                            //-                             |   Terms &amp; Conditions.
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   Sign me up for the NSRI newsletter.
+                            //-             .modal-footer
+                            //-                 button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
 
-                            #myModalVolunteer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                                .modal-dialog(role='document')
-                                    .modal-content
+                            //- #myModalVolunteer.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            //-     .modal-dialog(role='document')
+                            //-         .modal-content
 
-                                        .modal-header
-                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                span(aria-hidden='true') ×
-                                            h4.modal-title Volunteer
-                                        .modal-body
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputName2') Full Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='')
-                                                .form-group
-                                                    label(for='exampleInputEmail2') Email address&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
-                                            form
-                                                fieldset.form-group
-                                                  label(for='exampleTextarea') In what way are you willing to help?&nbsp; 
-                                                  label.small e.g. skills, at events etc.
-                                                  textarea#exampleTextarea.form-control(rows='4', placeholder='') 
-                                            br
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   I agree to the 
-                                                    a(href="#")
-                                                        |   Terms &amp; Conditions.
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   Sign me up for the NSRI newsletter.
-                                        .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Sign Up
+                            //-             .modal-header
+                            //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            //-                     span(aria-hidden='true') ×
+                            //-                 h4.modal-title Volunteer
+                            //-             .modal-body
+                            //-                 form
+                            //-                     .form-group
+                            //-                         label(for='exampleInputName2') Full Name&nbsp;
+                            //-                         input#exampleInputName2.form-control(type='text', placeholder='')
+                            //-                     .form-group
+                            //-                         label(for='exampleInputEmail2') Email address&nbsp;
+                            //-                         input#exampleInputEmail2.form-control(type='email', placeholder='')
+                            //-                 form
+                            //-                     fieldset.form-group
+                            //-                       label(for='exampleTextarea') In what way are you willing to help?&nbsp; 
+                            //-                       label.small e.g. skills, at events etc.
+                            //-                       textarea#exampleTextarea.form-control(rows='4', placeholder='') 
+                            //-                 br
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   I agree to the 
+                            //-                         a(href="#")
+                            //-                             |   Terms &amp; Conditions.
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   Sign me up for the NSRI newsletter.
+                            //-             .modal-footer
+                            //-                 button.btn.btn-primary(type='button', data-dismiss='modal') Sign Up
 
-                            #myModalSponsor.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-                                .modal-dialog(role='document')
-                                    .modal-content
+                            //- #myModalSponsor.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                            //-     .modal-dialog(role='document')
+                            //-         .modal-content
 
-                                        .modal-header
-                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                span(aria-hidden='true') ×
-                                            h4.modal-title Sponsor a Boat
-                                        .modal-body
-                                            h5 Select one of our NSRI boats below.
-                                            br
-                                            .row
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base 
-                                                br
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base
-                                            .row
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base 
-                                                br
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base
-                                            .row
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base 
-                                                br
-                                                .col-md-6
-                                                    .radio
-                                                        label
-                                                            input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
-                                                            .media
-                                                                .media-left
-                                                                    img.media-object(src="holder.js/200x100")
-                                                                    .media-body
-                                                                    p.small Boat Name    
-                                                                        a(href="") Rescue Base  
+                            //-             .modal-header
+                            //-                 button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            //-                     span(aria-hidden='true') ×
+                            //-                 h4.modal-title Sponsor a Boat
+                            //-             .modal-body
+                            //-                 h5 Select one of our NSRI boats below.
+                            //-                 br
+                            //-                 .row
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base 
+                            //-                     br
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base
+                            //-                 .row
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base 
+                            //-                     br
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base
+                            //-                 .row
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base 
+                            //-                     br
+                            //-                     .col-md-6
+                            //-                         .radio
+                            //-                             label
+                            //-                                 input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                            //-                                 .media
+                            //-                                     .media-left
+                            //-                                         img.media-object(src="holder.js/200x100")
+                            //-                                         .media-body
+                            //-                                         p.small Boat Name    
+                            //-                                             a(href="") Rescue Base  
                                             
-                                            br
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputName2') Full Name&nbsp;
-                                                    input#exampleInputName2.form-control(type='text', placeholder='')
-                                                .form-group
-                                                    label(for='exampleInputEmail2') Email address&nbsp;
-                                                    input#exampleInputEmail2.form-control(type='email', placeholder='')
-                                            br
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   I agree to the 
-                                                    a(href="#")
-                                                        |   Terms &amp; Conditions.
-                                            .checkbox.small.text-muted
-                                                label
-                                                    input(type='checkbox')
-                                                    |   Sign me up for the NSRI newsletter.
+                            //-                 br
+                            //-                 form
+                            //-                     .form-group
+                            //-                         label(for='exampleInputName2') Full Name&nbsp;
+                            //-                         input#exampleInputName2.form-control(type='text', placeholder='')
+                            //-                     .form-group
+                            //-                         label(for='exampleInputEmail2') Email address&nbsp;
+                            //-                         input#exampleInputEmail2.form-control(type='email', placeholder='')
+                            //-                 br
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   I agree to the 
+                            //-                         a(href="#")
+                            //-                             |   Terms &amp; Conditions.
+                            //-                 .checkbox.small.text-muted
+                            //-                     label
+                            //-                         input(type='checkbox')
+                            //-                         |   Sign me up for the NSRI newsletter.
 
-                                        .modal-footer
-                                            button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
+                            //-             .modal-footer
+                            //-                 button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
 
                 .col-md-4
                     .row
