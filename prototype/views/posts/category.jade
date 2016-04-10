@@ -7,9 +7,9 @@ block content
                 .col-md-12
                     ul.nav.nav-pills.small
                         li.nav-item
-                            a.nav-link.active(href="/blog") Latest
+                            a.nav-link(href="/blog") Latest
                         li.nav-item
-                            a.nav-link(href="/blog/category") Rescues
+                            a.nav-link.active(href="/blog/category") Rescues
                         li.nav-item
                             a.nav-link(href="/blog/category") Projects
                         li.nav-item
@@ -17,13 +17,18 @@ block content
                         li.nav-item
                             a.nav-link(href="/blog/category") Press
             br
-            h1.Blog Category Title
+            h1.Blog Rescues
             br
             .card-deck
                 each title in ["Cras mattis consectetur purus sit amet.", "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna."]
                     .card.story
                         img.card-img-top(src="holder.js/100px200")
                         .card-block
+                            span.label.label-default Rescues
+                            &nbsp;
+                            span.label.label-default Rescue Base Name
+                            br
+                            br
                             h4.card-title= title
                             p.small
                                 strong 4 March 2016
@@ -37,9 +42,11 @@ block content
                     .card.story
                         img.card-img-top(src="holder.js/100px160")
                         .card-block
-                            span.label.label-default Project
+                            span.label.label-default Rescues
                             &nbsp;
                             span.label.label-default Rescue Base Name
+                            br
+                            br
                             h4.card-title= title
                             p.small
                                 strong 4 March 2016
@@ -53,3 +60,4 @@ block content
                         a.btn.btn-primary(href="#")
                             | View More 
                             i.fa.fa-long-arrow-right
+            br

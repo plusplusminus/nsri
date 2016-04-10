@@ -1,22 +1,23 @@
 extends ../layouts/layout.jade
 
 block content
+    br
     .container
         .content
-            .row
-                .col-md-12
-                    ul.nav.nav-pills.small
-                        li.nav-item
-                            a.nav-link.active(href="/blog") Latest
-                        li.nav-item
-                            a.nav-link(href="/blog/category") Rescues
-                        li.nav-item
-                            a.nav-link(href="/blog/category") Projects
-                        li.nav-item
-                            a.nav-link(href="/blog/category") Publications
-                        li.nav-item
-                            a.nav-link(href="/blog/category") Press
-                    br
+            //- .row
+            //-     .col-md-12
+            //-         ul.nav.nav-pills.small
+            //-             li.nav-item
+            //-                 a.nav-link.active(href="/blog") Latest
+            //-             li.nav-item
+            //-                 a.nav-link(href="/blog/category") Rescues
+            //-             li.nav-item
+            //-                 a.nav-link(href="/blog/category") Projects
+            //-             li.nav-item
+            //-                 a.nav-link(href="/blog/category") Publications
+            //-             li.nav-item
+            //-                 a.nav-link(href="/blog/category") Press
+            //-         br
             .row
                 .col-md-8
                     .row
@@ -27,8 +28,8 @@ block content
                                 img.card-img-top(src="holder.js/100px400")
                                 .card-block
                                     h1.card-title Donec sed odio dui. Fusce dapibus.
-                                    p.small
-                                        strong 23 January 2016
+                                    p.small.text-muted
+                                        strong Sponsored by Mitsubishi
                                     p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
                                     a.btn.btn-primary.btn-lg(href="/single-win")
                                         |   Enter Now 
@@ -39,8 +40,8 @@ block content
                                 img.card-img-top(src="holder.js/100px400")
                                 .card-block
                                     h1.card-title Donec sed odio dui. Fusce dapibus.
-                                    p.small
-                                        strong 23 January 2016
+                                    p.small.text-muted
+                                        strong Sponsored by Mitsubishi
                                     p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
                                     a.btn.btn-primary.btn-lg(href="/single-win")
                                         |   Enter Now
@@ -56,40 +57,40 @@ block content
                                 .card-block
                                     h4.card-title.sans Get Involved
                                     .list-group.list-group-flush
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/donate")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Donate
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/volunteer")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Volunteer Your Time
-                                        a.list-group-item(href="#")
-                                            span.label.label-default.label-pill.pull-xs-right
-                                            | Sponsor a Boat
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/membership")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Membership Options
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/partner")
                                             span.label.label-default.label-pill.pull-xs-right
-                                            | Parter with Us
+                                            | Partner with Us
+                                        a.list-group-item(href="/sponsor")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Sponsor a Boat
 
-                        .col-md-12
-                            a(href="#")
-                                .card.story.card-inverse(style="background-color:#333;")
-                                    .card-block
-                                        br
-                                        br
-                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
-                                        br
-                                        br
-                        .col-md-12
-                            a(href="#")
-                                .card.story.card-inverse(style="background-color:#ccc;")
-                                    .card-block
-                                        br
-                                        br
-                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
-                                        br
-                                        br
+                    a(href="/volunteer")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Bakoven Rescue Base needs medical volunteers.
+                                br
+                                h2.card-title Apply now.
+                                br
+                    a(href="/donate") 
+                        .card.story.card-inverse(style="background-color:#ccc;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Vaal Rescue Base needs rescue boat equipment.
+                                br
+                                h2.card-title Donate now.
+                                br
             //- br
             //- .card.single
             //-     .card-block
@@ -120,8 +121,8 @@ block content
                         img.card-img-top(src="holder.js/100px160")
                         .card-block
                             h4.card-title= title
-                            p.small
-                                strong 4 March 2016
+                            p.small.text-muted
+                                strong Sponsored by Mitsubishi
                             a.btn.btn-primary(href="/single-win")
                                 |   Enter Now
             br

@@ -34,6 +34,11 @@ block content
                                     strong Featured Event
                                 img.card-img-top(src="holder.js/100px400")
                                 .card-block
+                                    span.label.label-default Tag
+                                    &nbsp;
+                                    span.label.label-default Tag
+                                    br
+                                    br
                                     h1.card-title Rare Plant Show for the NSRI
                                     .row
                                         .col-md-11.col-md-offset-1
@@ -54,6 +59,11 @@ block content
                                     strong Featured Event
                                 img.card-img-top(src="holder.js/100px400")
                                 .card-block
+                                    span.label.label-default Tag
+                                    &nbsp;
+                                    span.label.label-default Tag
+                                    br
+                                    br
                                     h1.card-title Discovery &amp; the NSRI
                                     .row
                                         .col-md-11.col-md-offset-1
@@ -79,104 +89,124 @@ block content
                                 .card-block
                                     h4.card-title.sans Get Involved
                                     .list-group.list-group-flush
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/donate")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Donate
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/volunteer")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Volunteer Your Time
-                                        a.list-group-item(href="#")
-                                            span.label.label-default.label-pill.pull-xs-right
-                                            | Sponsor a Boat
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/membership")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Membership Options
-                                        a.list-group-item(href="#")
+                                        a.list-group-item(href="/partner")
                                             span.label.label-default.label-pill.pull-xs-right
                                             | Partner with Us
-
-                        .col-md-12
-                            a(href="#")
-                                .card.story.card-inverse(style="background-color:#333;")
+                                        a.list-group-item(href="/sponsor")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Sponsor a Boat
+                        
+                        br
+                        a(href="/volunteer")
+                            .col-md-12
+                                .card.story.card-inverse(style="background-color:#555;")
                                     .card-block
                                         br
                                         br
-                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                        h3.card-title Volunteer at our Sea Rescue events.
+                                        h3.card-title Sign up now.
                                         br
                                         br
             br
             br
             .card.single
                 .card-block
-                    h3.card-title Upcoming Events
-                    .clearfix
-                        br
-
-                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
-                            h4.card-title April 2016
-                                i.fa.fa-arrow-down.fa-1.pull-right
-            
-                        #collapseDeposit.collapse
-                            .card-deck
-                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
-                                    .card.story
-                                        img.card-img-top(src="holder.js/100px160")
-                                        .card-block
-                                            h4.card-title= title
-                                            .row
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead Nullam Etiam
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 24 April 2016
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 09h00 - 15h00
-                        br
-                    
-                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
-                            h4.card-title May 2016
-                                i.fa.fa-arrow-down.fa-1.pull-right
-            
-                        #collapseDeposit.collapse
-                            .card-deck
-                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
-                                    .card.story
-                                        img.card-img-top(src="holder.js/100px160")
-                                        .card-block
-                                            h4.card-title= title
-                                            .row
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead Nullam Etiam
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 24 May 2016
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 09h00 - 15h00
-                        br
-                    
-                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
-                            h4.card-title June 2016
-                                i.fa.fa-arrow-down.fa-1.pull-right
-            
-                        #collapseDeposit.collapse
-                            .card-deck
-                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
-                                    .card.story
-                                        img.card-img-top(src="holder.js/100px160")
-                                        .card-block
-                                            h4.card-title= title
-                                            .row
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead Nullam Etiam
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 24 June 2016
-                                                br
-                                                .col-md-11.col-md-offset-1
-                                                    .card-text.lead 09h00 - 15h00
+                    h3.card-title.sans Upcoming Events
                     br
+                    .clearfix
+                        .row
+                            .col-md-10.col-md-offset-1
+
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseApril")
+                                    h4.card-title.sans April 2016
+                                        i.fa.fa-arrow-down.fa-1.pull-right
+                    
+                                #collapseApril.collapse
+                                    .card-deck
+                                        each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                            .card.story
+                                                img.card-img-top(src="holder.js/100px160")
+                                                .card-block
+                                                    span.label.label-default Tag
+                                                    &nbsp;
+                                                    span.label.label-default Tag
+                                                    br
+                                                    br
+                                                    h4.card-title= title
+                                                    .row
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead Nullam Etiam
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 24 April 2016
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 09h00 - 15h00
+                                br
+                            
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseMay")
+                                    h4.card-title.sans May 2016
+                                        i.fa.fa-arrow-down.fa-1.pull-right
+                    
+                                #collapseMay.collapse
+                                    .card-deck
+                                        each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                            .card.story
+                                                img.card-img-top(src="holder.js/100px160")
+                                                .card-block
+                                                    span.label.label-default Tag
+                                                    &nbsp;
+                                                    span.label.label-default Tag
+                                                    br
+                                                    br
+                                                    h4.card-title= title
+                                                    .row
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead Nullam Etiam
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 24 May 2016
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 09h00 - 15h00
+                                br
+                            
+                                a(style='text-decoration: none;' data-toggle="collapse" href="#collapseJune")
+                                    h4.card-title.sans June 2016
+                                        i.fa.fa-arrow-down.fa-1.pull-right
+                    
+                                #collapseJune.collapse
+                                    .card-deck
+                                        each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                            .card.story
+                                                img.card-img-top(src="holder.js/100px160")
+                                                .card-block
+                                                    span.label.label-default Tag
+                                                    &nbsp;
+                                                    span.label.label-default Tag
+                                                    br
+                                                    br
+                                                    h4.card-title= title
+                                                    .row
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead Nullam Etiam
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 24 June 2016
+                                                        br
+                                                        .col-md-11.col-md-offset-1
+                                                            .card-text.lead 09h00 - 15h00
+                    br
+            br 
 
 
             //- #myModalEvent.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')

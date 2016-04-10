@@ -9,82 +9,90 @@ block content
                         .card-block
                             h1.card-title Become an NSRI Member
                             .clearfix
-                            p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+                            p.card-text.lead Your personal annual membership fee goes towards our running costs and we will keep you updated on our projects and rescues through the Sea Rescue magazine, three times a year.
+                            p.card-text.lead Simply apply below.
 
-                            a(name="membership")
                             .row
                                 .col-md-12
                                     
                                     .card.story.card-inverse(style="background-color:#888")
                                         .card-block
-                                            h3.card-title Option
-                                            p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+                                            h3.card-title Cash Competition Membership
+                                            br  
+                                            .card-text
+                                                h4 R50 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
                             br
-                            a(name="donate")
-                            .row
-                                .col-md-12
-                                    
-                                    .card.story.card-inverse(style="background-color:#555")
-                                        .card-block
-                                            h3.card-title Option
-                                            p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-                            br
-                            a(name="volunteer")
+
                             .row
                                 .col-md-12
                                     
                                     .card.story.card-inverse(style="background-color:#888")
                                         .card-block
-                                            h5.card-title Option
-                                            p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. 
+                                            h3.card-title Individual Membership
+                                            br  
+                                            .card-text
+                                                h4 R100 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
                             br
-                            a(name="sponsor")
+                            
                             .row
                                 .col-md-12
+                                    
                                     .card.story.card-inverse(style="background-color:#555")
                                         .card-block
-                                            h3.card-title Option
-                                            p.card-text Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-                            br
-                            br
-                            .row
-                                .col-md-12
-                                    .card.story
-                                        .card-block
-                                            h3.card-title Sign Up Now
-                                            form
-                                                fieldset.form-group
-                                                    label(for='exampleInputPassword1') Name
-                                                    input#exampleInputPassword1.form-control(type='text', placeholder='')
-                                                fieldset.form-group
-                                                    label(for='exampleInputEmail1') Email address
-                                                    input#exampleInputEmail1.form-control(type='email', placeholder='')
-                                                fieldset.form-group
-                                                    label(for='exampleSelect1') Select Membership Type
-                                                    select#exampleSelect1.form-control
-                                                      option Options
-                                                      option Options
-                                                      option Options
-                                                      option Options
-                                                br
-                                            form
-                                                .form-group
-                                                    label(for='exampleInputAmount') Value you wish to donate per month (in South African Rands)
-                                                    .input-group
-                                                        .input-group-addon ZAR
-                                                        input#exampleInputAmount.form-control(type='text', placeholder='Amount')
-                                                        .input-group-addon .00
-                                                br
-                                                .checkbox.small.text-muted
-                                                    label
-                                                      input(type='checkbox')
-                                                      |  I accept the Terms &amp; Conditions.
-                                                .checkbox.small.text-muted
-                                                    label
-                                                      input(type='checkbox')
-                                                      |  Sign me up for the NSRI newsletter.
-                                                br
-                                                button.btn.btn-success(type='submit') Sign Up
+                                            h3.card-title Family Membership
+                                            br  
+                                            .card-text
+                                                h4 R300 per annum
+                                                | Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+
+                    br
+                    .row
+                        .col-md-12
+                            .card.story
+                                .card-block
+                                    h3.card-title Application for Membership
+                                    small.text-muted
+                                        em For private membership enquiries, please contact 
+                                        a(href="laurad@searescue.org.za")
+                                            em Laura.
+                                    br
+                                    br
+                                    form
+                                        fieldset.form-group
+                                            label(for='exampleInputPassword1') Name
+                                            input#exampleInputPassword1.form-control(type='text', placeholder='')
+                                        fieldset.form-group
+                                            label(for='exampleInputEmail1') Email address
+                                            input#exampleInputEmail1.form-control(type='email', placeholder='')
+                                        fieldset.form-group
+                                            label(for='exampleSelect1') Select Membership Type
+                                            select#exampleSelect1.form-control
+                                              option Cash Competition Membership
+                                              option Individual Membership
+                                              option Family Membership
+                                        br
+                                    form
+                                        .form-group
+                                            label(for='exampleInputAmount') Any additional donation you wish to make (in South African Rands)
+                                            .input-group
+                                                .input-group-addon ZAR
+                                                input#exampleInputAmount.form-control(type='text', placeholder='Amount')
+                                                .input-group-addon .00
+                                        br
+                                        .checkbox.small.text-muted
+                                            label
+                                              input(type='checkbox')
+                                              |  I accept the Terms &amp; Conditions.
+                                        .checkbox.small.text-muted
+                                            label
+                                              input(type='checkbox')
+                                              |  Sign me up for the NSRI newsletter.
+                                        br
+                                        button.btn.btn-success(type='button', data-dismiss='modal') Apply &amp; pay via Payfast or Card
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        button.btn.btn-success(type='button', data-dismiss='modal') Apply &amp; pay via PayPal 
 
                 .col-md-4
                     .card.sidebar
@@ -100,17 +108,38 @@ block content
                                 a.list-group-item.active(href="membership")
                                     span.label.label-default.label-pill.pull-xs-right
                                     | Membership Options
+                                a.list-group-item(href="/partner")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Partner with Us
                                 a.list-group-item(href="/sponsor")
                                     span.label.label-default.label-pill.pull-xs-right
                                     | Sponsor a Boat
-                    a(href="#")
+
+                    a(href="/volunteer")
+                        .card.story.card-inverse(style="background-color:#555;")
+                            .card-block
+                                br
+                                h3.card-title Durban Rescue Base needs administrative volunteers.
+                                br
+                                h2.card-title Apply now.
+                                br
+                    a(href="/volunteer")
                         .card.story.card-inverse(style="background-color:#333;")
                             .card-block
                                 br
                                 br
-                                h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                h3.card-title Bakoven Rescue Base needs medical volunteers.
+                                br
+                                h2.card-title Apply now.
+                                br
+                    a(href="/donate") 
+                        .card.story.card-inverse(style="background-color:#ccc;")
+                            .card-block
                                 br
                                 br
+                                h3.card-title Vaal Rescue Base needs rescue boat equipment.
+                                br
+                                h2.card-title Donate now.
                                 br
                 
             br
