@@ -1,0 +1,103 @@
+extends ../layouts/layout.jade
+
+block content
+    .container
+        .content
+            .row
+                .col-md-8
+                    .card.single
+                        .card-block
+                            h1.card-title Sponsor a Boat
+                            .clearfix
+                            p.card-text.lead Without boats, there could be no rescues.
+
+                            img.thumbnail(src="holder.js/100px400")
+                            p.small.text-right
+                                em This is an image caption
+
+                            p We have a range of boats in our fleet. Their prices vary from R140 000 to R12 million.  A sponsorship from a company or family will ensure a lasting gift by naming the boat for the lifespan of its service (around 11 years).
+
+                            p You will notice that in all our media reports we use the name of the boat involved in each rescue.  This ensures that the sponsors get their fair mileage in terms of publicity, and our rescue boats are “floating billboards” with the added benefit of genuine goodwill.
+
+                            p Complete the form below to sponsor a boat. Alternatively, contact Alison Smith at Head Office - 021 434 4011.
+                              
+                            br
+                            a.btn.btn-primary(href="https://www.dropbox.com/s/8m700dcf7ncio44/Intro%20Course%20Notes%20-%20English.pdf?dl=0") Download Boat Registry 
+                            br
+                            br
+                            br
+                            .row
+                                .col-md-12
+                                    .card.story
+                                        .card-block
+                                            h3.card-title Sponsor a Boat
+                                            br
+                                            form
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label First name
+                                                .col-sm-6
+                                                  input.form-control(type='text', placeholder='')
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label Last name
+                                                .col-sm-6
+                                                  input.form-control(type='text', placeholder='')
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label Email address
+                                                .col-sm-6
+                                                  input.form-control(type='email', placeholder='')
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label Phone number
+                                                .col-sm-6
+                                                  input.form-control(type='text', placeholder='')
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label Select a Rescue Base
+                                                .col-sm-6
+                                                    select.form-control
+                                                        option Base
+                                                        option Base
+                                                        option Base
+                                                        option Base
+                                                        option Base
+                                            .form-group.row
+                                                label.col-sm-5.col-sm-offset-1.form-control-label Select a Boat
+                                                .col-sm-6
+                                                    select.form-control
+                                                        option Boat
+                                                        option Boat
+                                                        option Boat
+                                                        option Boat
+                                                        option Boat
+                                            br
+                                            .checkbox.small.text-muted
+                                                label
+                                                  input(type='checkbox')
+                                                  |  I accept the Terms &amp; Conditions.
+                                                    
+                                            br
+                                            button.btn.btn-success(type='submit') Sponsor
+
+                .col-md-4
+                    .card.sidebar
+                        .card-block
+                            h4.card-title Get Involved
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/donate")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Donate
+                                a.list-group-item(href="/volunteer")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Volunteer Your Time
+                                a.list-group-item(href="membership")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Membership Options
+                                a.list-group-item(href="/sponsor")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Sponsor a Boat
+                    a(href="#")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                br
+                                br

@@ -24,61 +24,181 @@ block content
                                 a.dropdown-item(href='#') June 2016
                                 a.dropdown-item(href='#') July 2016
                                 a.dropdown-item(href='#') ...
-            br        
+            br
             .row
                 .col-md-8
-                    .card.story
-                        .card-header
-                            strong Featured Event
-                        img.card-img-top(src="holder.js/100px395?text=Poster")
-                        .card-block
-                            span.label.label-default Category
-                            h1.card-title Event Name.
-                            p.small
-                                strong 23 January 2016
-                            p.card-text.lead Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
-                            a.btn.btn-primary.btn-lg(href="/posts/single")
-                                |   Read More 
-                                i.fa.fa-long-arrow-right
+                    .row
+                        .col-md-6
+                            .card.story
+                                .card-header
+                                    strong Featured Event
+                                img.card-img-top(src="holder.js/100px400")
+                                .card-block
+                                    h1.card-title Rare Plant Show for the NSRI
+                                    .row
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead Tokara
+                                        br
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead 24 April 2016
+                                        br
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead 09h00 - 15h00
+                                        //- button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModalEvent')
+                                        //-     |   Attend
+                                        //- label 26 people attending
+
+                        .col-md-6
+                            .card.story
+                                .card-header
+                                    strong Featured Event
+                                img.card-img-top(src="holder.js/100px400")
+                                .card-block
+                                    h1.card-title Discovery &amp; the NSRI
+                                    .row
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead Route 44
+                                        br
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead 24 May 2016
+                                        br 
+                                        .col-md-11.col-md-offset-1
+                                            .card-text.lead 08h00 - 16h00
+                                        //- button.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModalEvent')
+                                        //-     |   Attend
+                                        //- label 26 people attending
+
+
+
+
+
                 .col-md-4
                     .row
                         .col-md-12
-                            .card.story
-                                .card-header.small
-                                    strong Calendar
-                                img.card-img-top(src="holder.js/100px400?text=Calendar")
+                            .card.sidebar
                                 .card-block
-                                    span.label.label-default Category
-                                    h3.card-title Event Name.
-                                    p.small
-                                        strong 23 January 2016
-                                    p.card-text.lead Cras mattis consectetur purus sit.
-                                    a.btn.btn-primary(href="/posts/single")
-                                        |   Read More 
-                                        i.fa.fa-long-arrow-right
+                                    h4.card-title.sans Get Involved
+                                    .list-group.list-group-flush
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Donate
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Volunteer Your Time
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Sponsor a Boat
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Membership Options
+                                        a.list-group-item(href="#")
+                                            span.label.label-default.label-pill.pull-xs-right
+                                            | Partner with Us
+
+                        .col-md-12
+                            a(href="#")
+                                .card.story.card-inverse(style="background-color:#333;")
+                                    .card-block
+                                        br
+                                        br
+                                        h3.card-title Vestibulum id ligula porta felis euismod semper.
+                                        br
+                                        br
+            br
+            br
+            .card.single
+                .card-block
+                    h3.card-title Upcoming Events
+                    .clearfix
+                        br
+
+                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
+                            h4.card-title April 2016
+                                i.fa.fa-arrow-down.fa-1.pull-right
+            
+                        #collapseDeposit.collapse
+                            .card-deck
+                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                    .card.story
+                                        img.card-img-top(src="holder.js/100px160")
+                                        .card-block
+                                            h4.card-title= title
                                             .row
-                            br
-                            a.btn.btn-success.btn-lg(href="#", style="margin-left:55px;") Volunteer at an Event
-            br
-            h2 Upcoming Events
-            br
-            .card-deck
-                each title in ["Cras mattis consectetur purus sit amet.", "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.", "Nullam id dolor id nibh ultricies vehicula ut id elit.", "Etiam porta sem malesuada magna."]
-                    .card.story
-                        img.card-img-top(src="holder.js/100px160")
-                        .card-block
-                            span.label.label-default Category
-                            span.label.label-default Rescue Base Name
-                            h4.card-title= title
-                            p.small
-                                strong 4 March 2016
-                            a.card-link(href="/posts/single")
-                                |   Read More 
-                                i.fa.fa-long-arrow-right
-            br
-            .row
-                .col-md-12
-                    .read-more.text-center
-                        a.btn.btn-primary(href="#")
-                            | Load More 
-            br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead Nullam Etiam
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 24 April 2016
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 09h00 - 15h00
+                        br
+                    
+                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
+                            h4.card-title May 2016
+                                i.fa.fa-arrow-down.fa-1.pull-right
+            
+                        #collapseDeposit.collapse
+                            .card-deck
+                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                    .card.story
+                                        img.card-img-top(src="holder.js/100px160")
+                                        .card-block
+                                            h4.card-title= title
+                                            .row
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead Nullam Etiam
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 24 May 2016
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 09h00 - 15h00
+                        br
+                    
+                        a(style='text-decoration: none;' data-toggle="collapse" href="#collapseDeposit")
+                            h4.card-title June 2016
+                                i.fa.fa-arrow-down.fa-1.pull-right
+            
+                        #collapseDeposit.collapse
+                            .card-deck
+                                each title in ["Cras mattis", "Morbi leo", "Nullam id", "Etiam porta"]
+                                    .card.story
+                                        img.card-img-top(src="holder.js/100px160")
+                                        .card-block
+                                            h4.card-title= title
+                                            .row
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead Nullam Etiam
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 24 June 2016
+                                                br
+                                                .col-md-11.col-md-offset-1
+                                                    .card-text.lead 09h00 - 15h00
+                    br
+
+
+            //- #myModalEvent.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            //-    .modal-dialog(role='document')
+            //-             .modal-content
+
+            //-                 .modal-header
+            //-                     button.close(type='button', data-dismiss='modal', aria-label='Close')
+            //-                         span(aria-hidden='true') ×
+            //-                     h4.modal-title Volunteer
+            //-                 .modal-body
+            //-                     form
+            //-                         .form-group
+            //-                             label(for='exampleInputName2') Full Name&nbsp;
+            //-                             input#exampleInputName2.form-control(type='text', placeholder='')
+            //-                         .form-group
+            //-                             label(for='exampleInputEmail2') Email address&nbsp;
+            //-                             input#exampleInputEmail2.form-control(type='email', placeholder='')
+            //-                         br
+            //-                         .checkbox.small.text-muted
+            //-                         label
+            //-                         input(type='checkbox')
+            //-                         |   Sign me up for the NSRI newsletter.
+            //-                 .modal-footer
+            //-                     button.btn.btn-primary(type='button', data-dismiss='modal') Close

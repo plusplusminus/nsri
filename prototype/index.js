@@ -125,6 +125,14 @@ app.get('/volunteer', function (req, res) {
   res.render('pages/volunteer', {data: data})
 })
 
+app.get('/sponsor', function (req, res) {
+  res.render('pages/sponsor', {data: data})
+})
+
+app.get('/partner', function (req, res) {
+  res.render('pages/partner', {data: data})
+})
+
 var server = app.listen(3000, function () {
   console.log('Server running at http://localhost:' + server.address().port)
 })
