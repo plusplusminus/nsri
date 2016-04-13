@@ -279,41 +279,51 @@ block content
                             //-                 button.btn.btn-primary(type='button', data-dismiss='modal') Pay by Card
 
                 .col-md-4
-                    .row
-                        .col-md-12
-                            .card.story
-                                .card-header.small
-                                    strong Special Focus Story
-                                img.card-img-top(src="holder.js/100px200")
-                                .card-block
-                                    span.label.label-default Category
-                                    &nbsp;
-                                    span.label.label-default Rescue Base Name
-                                    h3.card-title Aenean Ridiculus Porta Quam.
-                                    p.small
-                                        strong 23 January 2016
-                                    a.btn.btn-primary(href="/posts/single")
-                                        |   Read More 
-                                        i.fa.fa-long-arrow-right
+                    .card.sidebar
+                        .card-block
+                            h4.card-title Get Involved
+                            .list-group.list-group-flush
+                                a.list-group-item(href="/donate")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Donate
+                                a.list-group-item(href="/volunteer")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Volunteer Your Time
+                                a.list-group-item(href="membership")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Membership Options
+                                a.list-group-item(href="/partner")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Partner with Us
+                                a.list-group-item(href="/sponsor")
+                                    span.label.label-default.label-pill.pull-xs-right
+                                    | Sponsor a Boat
 
-                            .card.story
-                                .card-header.small
-                                    strong Featured Rescue Base
-                                img.card-img-top(src="holder.js/100px200")
-                                .card-block
-                                    h3.card-title Base Name
-                                    p.small
-                                        strong Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                                    a.btn.btn-primary(href="/contact/bases#basefinder")
-                                        |   Read More 
-                                        i.fa.fa-long-arrow-right
+                    a(href="/about/values")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                h3.card-title Learn more about our story, people &amp; values.
+                                br
 
-                            a(href="/about/values")
-                                .card.story.card-inverse(style="background-color:#333;")
-                                    .card-block
-                                        br
-                                        h3.card-title Learn more about our story, people &amp; values.
-                                        br
+                    a(href="/volunteer")
+                        .card.story.card-inverse(style="background-color:#555;")
+                            .card-block
+                                br
+                                h3.card-title Durban Rescue Base needs administrative volunteers.
+                                br
+                                h2.card-title Apply now.
+                                br
+                                    
+                    a(href="/volunteer")
+                        .card.story.card-inverse(style="background-color:#333;")
+                            .card-block
+                                br
+                                br
+                                h3.card-title Bakoven Rescue Base needs medical volunteers.
+                                br
+                                h2.card-title Apply now.
+                                br
                                 
 
             br
