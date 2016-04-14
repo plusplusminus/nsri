@@ -8,6 +8,8 @@ var _ = require('lodash')
 var engines = require('consolidate')
 var data = {};
 
+var port = process.env.PORT || 8080;
+
 app.engine('jade', engines.jade)
 
 app.set('views', rootPath+'/views')
@@ -133,6 +135,6 @@ app.get('/partner', function (req, res) {
   res.render('pages/partner', {data: data})
 })
 
-var server = app.listen(3000, function () {
+var server = app.listen(port, function () {
   console.log('Server running at http://localhost:' + server.address().port)
 })
