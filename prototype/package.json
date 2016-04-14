@@ -1,5 +1,5 @@
 {
-  "name": "nsriprototype",
+  "name": "nsri",
   "version": "1.0.0",
   "description": "Getting Started with Express",
   "main": "index.js",
@@ -29,5 +29,9 @@
     "gulp-uglify": "^1.5.3",
     "gulp-uglifycss": "^1.0.6",
     "sassdoc": "^2.1.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/nsri.git"
   }
 }
