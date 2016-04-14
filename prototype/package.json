@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "postinstall": "bower install"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",
@@ -17,7 +16,8 @@
     "handlebars": "^3.0.3",
     "jade": "^1.11.0",
     "lodash": "^3.10.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "postinstall": "bower install"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
